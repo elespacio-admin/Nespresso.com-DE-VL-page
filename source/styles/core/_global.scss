@@ -1,0 +1,105 @@
+#{$projectSelector} {
+
+  background-color: $WHITE;
+  z-index: 1;
+  position: relative;
+
+  max-width: 996px;
+  margin: 0 auto;
+
+  *, button {
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  ul, li {
+    @include removeSpace;
+  }
+
+  ::-moz-selection {
+    background: rgba($DEFAULT_LINK_COLOR, 0.3);
+  }
+
+  ::selection {
+    background: rgba($DEFAULT_LINK_COLOR, 0.3);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @include removeSpace;
+
+    display: inline-block;
+    position: relative;
+  }
+
+  p {
+
+    @include removeSpace;
+  }
+
+  .no-break {
+    white-space: nowrap;
+  }
+
+  .grid-container {
+    @include center(1440px);
+  }
+
+  // line breaks
+
+  // Transition between pages
+
+  // .watcher-js {
+  //   .js-view-title,
+  //   .js-view-block,
+  //   .js-view-img {
+  //     opacity: 0;
+  //     visibility: hidden;
+  //     transform: translateY(50px);
+  //     transition: opacity 1s $easeOutQuad, transform .8s $easeOutQuad;
+  //   }
+
+  //   &.entered {
+  //     .js-view-title,
+  //     .js-view-img {
+  //       opacity: 1;
+  //       visibility: visible;
+  //       transform: translateY(0px);
+  //     }
+  //     .js-view-block {
+  //       opacity: 1;
+  //       visibility: visible;
+  //       transform: translateY(0px);
+  //       transition: opacity 1.5s $easeOutQuad .5s, transform .8s $easeOutQuad .5s;
+  //     }
+  //   }
+  // }
+
+  // line breaks
+  br.narrow {
+    display: none;
+
+    @include max-screen($BREAKPOINT_NARROW) {
+
+      display: inline;
+    }
+  }
+
+  br.not-narrow {
+    display: none;
+
+    @include min-screen($BREAKPOINT_NARROW) {
+
+      display: inline;
+    }
+  }
+}
+
+
+
+
+
+
+

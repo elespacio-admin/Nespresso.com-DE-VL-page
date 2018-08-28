@@ -1,0 +1,25 @@
+body {
+	background-color: black;
+	margin: 0;
+	padding: 0;
+}
+
+.nespresso-wrapper {
+
+	margin: 0 auto;
+	max-width: 996px;
+
+	&.mobile-wrapper {
+		padding-top: 44px;
+
+		.black-nespresso-bar {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 15;
+			width: 100%;
+			background-color: #000;
+			height: 45px;
+		}
+	}
+}

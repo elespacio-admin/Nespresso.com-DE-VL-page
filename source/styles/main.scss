@@ -1,0 +1,20 @@
+@import 'jeet';
+
+@import 'core/motion';
+@import 'core/constants';
+@import 'core/mixins';
+@import 'core/media-queries';
+
+@import 'ui/fonts';
+@import 'ui/typography';
+@import 'ui/buttons';
+@import 'ui/backgrounds';
+@import 'ui/other';
+
+@import 'core/global';
+
+// @import 'libs/slick';
+
+// @import 'components/tabs-component';
+@import 'pages/styleguide';
+@import 'pages/home';

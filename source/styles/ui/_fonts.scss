@@ -1,0 +1,74 @@
+// Nespresso
+@font-face {
+  font-family: '_nespresso';
+  src: local('NespressoLucas Light'),local('NespressoLucasLight'),url('#{$url_prefix}/assets/fonts/NespressoLucas-Light.woff') format('woff');
+  font-weight: $LIGHT;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '_nespresso';
+  src: local('NespressoLucas Regular'),local('NespressoLucasRegular'),url('#{$url_prefix}/assets/fonts/NespressoLucas-Regular.woff') format('woff');
+  font-weight: $REGULAR;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '_nespresso';
+  src: local('NespressoLucas SemiBd'),local('NespressoLucasSemiBd'),url('#{$url_prefix}/assets/fonts/NespressoLucas-SemiBd.woff') format('woff');
+  font-weight: $SEMIBOLD;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '_nespresso';
+  src: local('NespressoLucas XtraBd'),local('NespressoLucasXtraBd'),url('#{$url_prefix}/assets/fonts/NespressoLucas-XtraBd.woff') format('woff');
+  font-weight: $EXTRABOLD;
+  font-style: normal;
+}
+
+// Trebouchet
+@font-face {
+  font-family: '_trebuchet';
+  src: local('Trebuchet MS'),local('TrebuchetMS'),url('#{$url_prefix}/assets/fonts/Trebuchet MS.woff') format('woff');
+  font-weight: $REGULAR;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '_trebuchet';
+  src: local('Trebuchet MS Bold'),local('TrebuchetMSBold'),url('#{$url_prefix}/assets/fonts/Trebuchet MS Bold.woff') format('woff');
+  font-weight: $BOLD;
+  font-style: normal;
+}
+
+#{$projectSelector} {
+
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+%header-font {
+  font-family: '_nespresso', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+%normal-font {
+  font-family: '_trebuchet', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include font-size(16px, 24px);
+}

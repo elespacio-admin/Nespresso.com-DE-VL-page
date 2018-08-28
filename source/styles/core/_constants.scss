@@ -1,0 +1,114 @@
+//----------------------------------------
+// Settings
+//----------------------------------------
+$jeet-gutter: 1.04;
+
+$projectSelector: "#nvertuo2018";
+
+$url_prefix: "http://local.nvertuo.com";
+// $url_prefix: "http://nvertuo.elespacio.net";
+
+// distribution
+// $url_prefix: "https://www.nespresso.com/shared_res/mos/free_html/de/thepositivecup";
+
+//----------------------------------------
+// Dimensions
+//----------------------------------------
+
+$BASE_FONT_SIZE: 16px !default;
+$BASE_LINE_HEIGHT: 26px !default;
+$REM_LINE_HEIGHT: $BASE_LINE_HEIGHT / $BASE_FONT_SIZE * 1rem;
+
+//----------------------------------------
+// Responsive
+//----------------------------------------
+
+$BREAKPOINT_NARROW: 768px;
+$BREAKPOINT_MEDIUM: 996px;
+$BREAKPOINT_WIDE: 1400px;
+
+//----------------------------------------
+// Colors
+//----------------------------------------
+
+$BLACK: #000000;
+$WHITE: #FFFFFF;
+$GREEN: #3D8720;
+$GOLD: #A57E42;
+
+$DEFAULT_LINK_COLOR: $WHITE;
+
+$COLOR_FACEBOOK: #3C5A9B;
+$COLOR_PINTEREST: #C42628;
+$COLOR_TUMBLR: #395E7E;
+$COLOR_GPLUS: #DD4B39;
+$COLOR_TWITTER: #2EACF0;
+$COLOR_LINKEDIN: #007BB6;
+
+//----------------------------------------
+// Font Weights
+//----------------------------------------
+
+$THIN: 100;
+$LIGHT: 200;
+$REGULAR: 400;
+$MEDIUM: 500;
+$SEMIBOLD: 600;
+$BOLD: 700;
+$EXTRABOLD: 900;
+
+//----------------------------------------
+// Directions
+//----------------------------------------
+
+$LEFT: left;
+$RIGHT: right;
+$UP: up;
+$DOWN: down;
+
+
+//----------------------------------------
+// Alignments
+//----------------------------------------
+
+$CENTER: center;
+
+
+//----------------------------------------
+// Targets
+//----------------------------------------
+
+$INLINE: inline;
+$BEFORE: before;
+$AFTER: after;
+
+
+//----------------------------------------
+// Positions
+//----------------------------------------
+
+$RELATIVE: relative;
+$ABSOLUTE: absolute;
+$FIXED: fixed;
+
+
+//----------------------------------------
+// Z-index Depth
+//----------------------------------------
+
+$PRELOADER_Z: 200;
+$OVERLAY_Z: 150;
+$MENU_Z: 100;
+$LOADER_Z: 50;
+$COVER_Z: 25;
+$PAGE_Z: 10;
+
+
+//----------------------------------------
+// Animation
+//----------------------------------------
+$SHOW_DURATION: 0.75s;
+$SHOW_EASING: $easeOutQuad;
+
+$BTN_TRANSITION_TIME : .15s;
+$BTN_TRANSITION_DELAY : .15s;
