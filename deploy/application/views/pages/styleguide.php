@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
 </head>
 <body>
-	<div class="styleguide-page" id="nvertuo2018">
+	<div class="styleguide-page nvertuo2018" >
 	<div class="content-wrapper">
 	<div class="content">
 
@@ -38,10 +38,10 @@
 		<section id="buttons">
 			<div class="constraint-wrapper">
 				<h2 class="section-header">Buttons</h2><hr>
-					<button class="block-button" data-label="block-button"><span class="label button--label">become a member</span></button>
+					<a href="#" class="block-button" data-label="block-button"><span class="label button--label">become a member</span></a>
 					<div class="code body-normal">{block-button}</div>
 
-					<button class="block-button transparent" data-label="block-button"><span class="label button--label">block-button transparent</span></button>
+					<a href="#" class="block-button transparent" data-label="block-button"><span class="label button--label">block-button transparent</span></a>
 					<div class="code body-normal">{block-button.transparent}</div>
 					<button class="round-button plus"><span class="icon"></span></button>
 					<div class="code body-normal">{round-button.plus}</div>

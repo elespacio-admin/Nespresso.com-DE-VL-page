@@ -81,10 +81,9 @@
 		text-transform: uppercase;
 		font-weight: $SEMIBOLD;
 		padding: 0;
-		display: inline-block;
 		// @include font-size(14px, 14px);
 		@media (min-width: $BREAKPOINT_MEDIUM) {
-			@include font-size(14px, 8px);
+			@include font-size(14px, 14px);
 			letter-spacing: 0.025rem;
 		}
 	}

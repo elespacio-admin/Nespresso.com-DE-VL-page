@@ -1,4 +1,13 @@
 #{$projectSelector}.styleguide-page {
+	
+	::-moz-selection {
+    background: rgba(#111, 0.75);
+  }
+
+  ::selection {
+   background: rgba(#111, 0.75);
+  }
+
 	background-color: #E2DFD8;
 	color: #080808;
 

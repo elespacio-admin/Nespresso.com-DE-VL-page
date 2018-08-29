@@ -41,4 +41,4 @@
       <div class="nespresso-header--attached"></div>
     <?php endif;?>
 
-      <div id="nvertuo2018" class="">
+      <div class="nvertuo2018">

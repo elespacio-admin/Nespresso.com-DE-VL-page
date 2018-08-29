@@ -11,6 +11,12 @@
       "og_image" : "positivecup.jpg",
       "og_site_name" : "Nespresso | Original & Vertuo",
       "og_url" : "/"
+    },
+    "intro": {
+      "header": "Original &amp; Vertuo",
+      "title": "Discover two unique coffee experiences",
+      "cta": "Become a member",
+      "scroll": "Discover more"
     }
   }
 }

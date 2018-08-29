@@ -1,2 +1,73 @@
 #{$projectSelector} {
+	.intro {
+		position: relative;
+		background-color: #ebe5df;
+		color: $BLACK;
+		text-align: center;
+		height: calc(100vh - #{$HEADER_SIZE_N});
+		@include min-screen($BREAKPOINT_NARROW){
+			height: calc(100vh - #{$HEADER_SIZE_M});
+		}
+		@include min-screen($BREAKPOINT_MEDIUM){
+			height: calc(100vh - #{$HEADER_SIZE_W});
+		}
+
+		&Text {
+			padding-top: percentage(66/1400);
+		}
+
+		&Header {
+			display: block;
+			width: 100%;
+			margin-bottom: 4px;
+		}
+
+		&Title {
+			display: block;
+			width: percentage(7/12);
+			margin: 0 auto 12px auto;
+			max-width: 750px;
+		}
+
+		&Scroll {
+			width: 100%;
+			position: absolute;
+			bottom: percentage(60/1400);
+			left: 0;
+
+			&CTA {
+				display: inline-block;
+				position: relative;
+			}
+
+			&Icon {
+				display: block;
+				width: 20px;
+				margin-left: -10px;
+				height: 11px;
+				position: absolute;
+				left: 50%;
+				top: 100%;
+				&:before,
+				&:after {
+					content: "";
+					display: block;
+					width:2px;
+					height: 12px;
+					background-color: $BLACK;
+					position: absolute;
+					left: 50%;
+					top: 0;
+					transform-origin: center 11px;
+				}
+
+				&:before {
+					transform: rotate(-45deg);
+				}
+				&:after {
+					transform: rotate(45deg);
+				}
+			}
+		}
+	}
 }

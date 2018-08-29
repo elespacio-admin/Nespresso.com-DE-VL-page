@@ -5,7 +5,7 @@
   z-index: 1;
   position: relative;
 
-  max-width: 996px;
+  // max-width: 996px;
   margin: 0 auto;
 
   *, button {
@@ -44,9 +44,9 @@
     white-space: nowrap;
   }
 
-  .grid-container {
-    @include center(1440px);
-  }
+  // .grid-container {
+  //   @include center(1440px);
+  // }
 
   // line breaks
 
