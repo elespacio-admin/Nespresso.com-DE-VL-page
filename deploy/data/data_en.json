@@ -19,52 +19,64 @@
       "cta_link": "#member-missing-link",
       "scroll": "Discover more"
     },
-    "choose": {
+    "choice": {
       "title":"Choose your coffee range, machine &amp; accessories",
-      "originalRange": {
-        "header": "original range",
-        "title": "The highest<br> coffee quality",
-        "body": "Choose from a wide range of <em><em>Nespresso</em></em> coffee capsules, each with its own distinct individual character and aroma. You can never have too much choice. No two <em><em>Nespresso</em></em> flavours are the same.",
-        "cta": "Discover Original Coffee Range",
-        "feature_a": "exceptional espresso variety",
-        "feature_b": "creamy and dense cream"
-      },
-      "originalMachine": {
-        "header": "original machine",
-        "title": "working with<br> 19 bar pressure",
-        "body": "For those of you who like espresso coffees, the technology in <em><em>Nespresso</em></em> Original machines uses a high-pressure extraction system to give you that fresh aroma from each <em><em>Nespresso</em></em> capsule.",
-        "cta": "Discover Original Machine Range",
-        "feature-a": "pressure extraction system",
-        "feature_b": "espresso-based and milk recipes"
-      },
-      "originalAccessories": {
-        "header": "original accessories",
-        "title": "the finest coffee<br> special accesories",
-        "body": "Refine your moments of enjoyment with our accessory collections - the perfect combination of form and function.<br> Cups and glasses for every coffee specialty as well as capsule dispensers for the perfect storage of your favorite coffees.",
-        "cta": "Discover Original Accessories"
-      },
-      "vertuoRange": {
-        "header": "vertuo range",
-        "title": "The bigger<br> coffee cup",
-        "body": "Vertuo coffee capsules come in all different shapes and sizes. 25 blends and five cup sizes to be exact.<br> Each blend is specially made for each size to indulge yourself, at any time of the day. ",
-        "cta": "Discover Vertuo Coffee Range",
-        "feature_a": "Fullbodied coffee pleasure in a big mug",
-        "feature_b": "Generous and smooth cream"
-      },
-      "vertuoMachine": {
-        "header": "vertuo machine",
-        "title": "centrifusion<br> technology",
-        "body": "For those of you who prefer a lager cup of coffee. The capsule spins up to 7,000 rotations per minute, blending ground coffee with water and producing the perfect crema to enjoy quality coffee in larger cup sizes.",
-        "cta": "Discover Vertuo Machine Range",
-        "feature_a": "Innovative coffee system",
-        "feature_b": "Extraction by centrifusion&trade;"
-      },
-      "vertuoAccessories": {
-        "header": "vertuo accessories",
-        "title": "awaken<br> your senses",
-        "body": "Designer Konstantin Grcic combined the senses of taste, smell and sight to create a variety of accessories made for a wide range of <em>Nespresso</em> Vertuo coffee experiences.<br>Time to get inspired!",
-        "cta": "Discover Vertuo Accessories"
-      }
+      "original_label": "original<br> range",
+      "vertuo_label": "vertuo<br> range",
+      "original":[
+        {
+          "class": "range",
+          "header": "original range",
+          "title": "The highest<br> coffee quality",
+          "body": "Choose from a wide range of <em><em>Nespresso</em></em> coffee capsules, each with its own distinct individual character and aroma. You can never have too much choice. No two <em><em>Nespresso</em></em> flavours are the same.",
+          "cta": "Discover Original Coffee Range",
+          "feature_a": "exceptional espresso variety",
+          "feature_b": "creamy and dense crema"
+        },
+        {
+          "class": "machine",
+          "header": "original machine",
+          "title": "working with<br> 19 bar pressure",
+          "body": "For those of you who like espresso coffees, the technology in <em><em>Nespresso</em></em> Original machines uses a high-pressure extraction system to give you that fresh aroma from each <em><em>Nespresso</em></em> capsule.",
+          "cta": "Discover Original Machine Range",
+          "feature_a": "pressure extraction system",
+          "feature_b": "espresso-based and milk recipes"
+        },
+        {
+          "class": "accessories",
+          "header": "original accessories",
+          "title": "the finest coffee<br> special accesories",
+          "body": "Refine your moments of enjoyment with our accessory collections - the perfect combination of form and function.<br> Cups and glasses for every coffee specialty as well as capsule dispensers for the perfect storage of your favorite coffees.",
+          "cta": "Discover Original Accessories"
+        }
+      ],
+      "vertuo": [
+        {
+          "class": "range",
+          "header": "vertuo range",
+          "title": "The bigger<br> coffee cup",
+          "body": "Vertuo coffee capsules come in all different shapes and sizes. 25 blends and five cup sizes to be exact.<br> Each blend is specially made for each size to indulge yourself, at any time of the day. ",
+          "cta": "Discover Vertuo Coffee Range",
+          "feature_a": "Fullbodied coffee pleasure in a big mug",
+          "feature_b": "Generous and smooth crema"
+        },
+        {
+          "class": "machine",
+          "header": "vertuo machine",
+          "title": "centrifusion<br> technology",
+          "body": "For those of you who prefer a lager cup of coffee. The capsule spins up to 7,000 rotations per minute, blending ground coffee with water and producing the perfect crema to enjoy quality coffee in larger cup sizes.",
+          "cta": "Discover Vertuo Machine Range",
+          "feature_a": "Innovative coffee system",
+          "feature_b": "Extraction by centrifusion&trade;"
+        },
+        {
+          "class": "accessories",
+          "header": "vertuo accessories",
+          "title": "awaken<br> your senses",
+          "body": "Designer Konstantin Grcic combined the senses of taste, smell and sight to create a variety of accessories made for a wide range of <em>Nespresso</em> Vertuo coffee experiences.<br>Time to get inspired!",
+          "cta": "Discover Vertuo Accessories"
+        }
+      ]
     },
     "services": {
       "title": "exclusive personal services",

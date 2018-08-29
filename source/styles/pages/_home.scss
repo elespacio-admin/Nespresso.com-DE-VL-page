@@ -1,9 +1,13 @@
 #{$projectSelector} {
-	.intro {
+	
+	section {
 		position: relative;
+		text-align: center;
+	}
+
+	.intro {
 		background-color: #ebe5df;
 		color: $BLACK;
-		text-align: center;
 
 		background: #ebe5df url(#{$url_prefix}/assets/images/intro-N.jpg) center bottom;
 		background-size: cover;
@@ -81,6 +85,165 @@
 				}
 				&:after {
 					transform: rotate(45deg);
+				}
+			}
+		}
+	}
+
+	.choice {
+
+		background-color: $WHITE;
+		padding-top: 40px;
+		position: relative;
+
+		@include min-screen($BREAKPOINT_NARROW){
+			padding-top: 110px;
+		}
+
+		@include min-screen($BREAKPOINT_MEDIUM){
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				width: 50%;
+				z-index: 1;
+				background-color: $BLACK;
+			}
+		}
+		
+		&Title {
+			position: relative;
+			z-index: 2;
+			color: #6E6E6E;
+			width: percentage(11/12);
+			margin-bottom: 40px;
+			@include min-screen($BREAKPOINT_NARROW){
+				margin-bottom: 0;
+			}
+		}
+
+		&Tabs {
+			position: relative;
+			z-index: 2;
+			display: flex;
+			align-content: stretch;
+
+			@include min-screen($BREAKPOINT_MEDIUM){
+				display: none;
+			}
+		}
+
+		&Tab {
+			display: block;
+			padding: 125px 0 15px 0;
+			width: 50%;
+			&.original {
+				color: $WHITE;
+				background-color: $BLACK;
+			}
+			&.vertuo {
+				color: $BLACK;
+				background-color: #F6F6F6;
+			}
+		}
+
+		&Options {
+			position: relative;
+			z-index: 2;
+			@include min-screen($BREAKPOINT_MEDIUM){
+				display: flex;
+				justify-content: space-evenly;
+			}
+		}
+
+		&Container {
+			padding-top: 25px;
+
+			display: none;
+
+			@include min-screen($BREAKPOINT_MEDIUM){
+				display: block;
+				width: 50%;
+			}
+
+			&.is-visible {
+				display: block;
+			}
+
+			&.original {
+				color: $WHITE;
+				background-color: $BLACK;
+				@include min-screen($BREAKPOINT_MEDIUM){
+					background-color: transparent;
+				}
+			}
+			&.vertuo {
+				color: $BLACK;
+				background-color: #F6F6F6;
+				@include min-screen($BREAKPOINT_MEDIUM){
+					background-color: transparent;
+				}
+			}
+		}
+
+		&Item {
+			padding-bottom: 30px;
+			> * {
+				width: percentage(11/12);
+				margin: 0 auto;
+			}
+			&Graphic {
+				height: 200px;
+				background-color: rgba(#666, 0.25);
+			}
+			&Header {
+				padding: 15px 0 5px 0;
+			}
+			&Title {
+				padding-bottom: 15px;
+				@include min-screen($BREAKPOINT_MEDIUM){
+					padding-bottom: 20px;
+				}
+			}
+			&CTA {
+				position: relative;
+				padding-top: 20px;
+				padding-bottom: 35px;
+				display: none;
+				@include min-screen($BREAKPOINT_MEDIUM){
+					display: block;
+				}
+				&Label {
+					color: $GOLD;
+				}
+				&Button {
+					position: absolute;
+					top: 55px;
+					left: 50%;
+					margin-left: -18px;
+					@include min-screen($BREAKPOINT_MEDIUM){
+						width: 36px;
+					}
+				}
+			}
+			&Features {
+				display: flex;
+				justify-content: space-evenly;
+			}
+			&Feature {
+				width: percentage(160/320);
+				max-width: 200px;
+				padding-top: 30px;
+				&Graphic {
+					display: inline-block;
+					width: 72px;
+					height: 72px;
+					background-color: rgba(#666, 0.25);
+				}
+				&Label {
+					margin-top: 15px;
 				}
 			}
 		}
