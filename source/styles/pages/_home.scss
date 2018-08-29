@@ -4,16 +4,24 @@
 		background-color: #ebe5df;
 		color: $BLACK;
 		text-align: center;
+
+		background: #ebe5df url(#{$url_prefix}/assets/images/intro-N.jpg) center bottom;
+		background-size: cover;
 		height: calc(100vh - #{$HEADER_SIZE_N});
 		@include min-screen($BREAKPOINT_NARROW){
 			height: calc(100vh - #{$HEADER_SIZE_M});
 		}
 		@include min-screen($BREAKPOINT_MEDIUM){
 			height: calc(100vh - #{$HEADER_SIZE_W});
+			background: #ebe5df url(#{$url_prefix}/assets/images/intro-W.jpg) center 75%;
+			background-size: cover;
 		}
 
 		&Text {
-			padding-top: percentage(66/1400);
+			padding-top: 40px;
+			@include min-screen($BREAKPOINT_MEDIUM){
+				padding-top: percentage(60/1400);
+			}
 		}
 
 		&Header {
@@ -24,7 +32,10 @@
 
 		&Title {
 			display: block;
-			width: percentage(7/12);
+			width: percentage(11/12);
+			@include min-screen($BREAKPOINT_NARROW){
+				width: percentage(7/12);
+			}
 			margin: 0 auto 12px auto;
 			max-width: 750px;
 		}
@@ -32,7 +43,11 @@
 		&Scroll {
 			width: 100%;
 			position: absolute;
-			bottom: percentage(60/1400);
+			bottom: 0;
+			padding-bottom: 40px;
+			@include min-screen($BREAKPOINT_MEDIUM){
+				padding-bottom: percentage(60/1400);
+			}
 			left: 0;
 
 			&CTA {

@@ -4,7 +4,8 @@
 		@extend %header-font;
 		text-transform: uppercase;
 		font-weight: $EXTRABOLD;
-		// @include font-size(50px, 62px);
+		@include font-size(32px, 40px);
+		letter-spacing: 0.25rem;
 		
 		@media (min-width: $BREAKPOINT_MEDIUM) {
 			@include font-size(48px, 64px);
@@ -16,7 +17,8 @@
 		@extend %header-font;
 		text-transform: uppercase;
 		font-weight: $LIGHT;
-		// @include font-size(50px, 62px);
+		@include font-size(26px, 36px);
+		letter-spacing: 0.25rem;
 		
 		@media (min-width: $BREAKPOINT_MEDIUM) {
 			@include font-size(36px, 48px);
@@ -28,7 +30,8 @@
 		@extend %header-font;
 		text-transform: uppercase;
 		font-weight: $EXTRABOLD;
-		// @include font-size(50px, 62px);
+		@include font-size(17px, 24px);
+
 		@media (min-width: $BREAKPOINT_MEDIUM) {
 			@include font-size(18px, 24px);
 			letter-spacing: 0.075rem;
@@ -43,37 +46,13 @@
 	.header--small {
 		@extend %header-font;
 		font-weight: $REGULAR;
-		// @include font-size(50px, 62px);
+		@include font-size(15px, 24px);
+		letter-spacing: 0.02rem;
+
 		@media (min-width: $BREAKPOINT_MEDIUM) {
 			@include font-size(16px, 24px);
 			letter-spacing: 0.075rem;
 		}
-	}
-
-	.highlight-text {
-		// @extend %header-font;
-		// @include font-size(28px, 38px);
-		// font-weight: normal;
-	}
-
-	.highlight-text__italic {
-
-		// @extend %header-font;
-		// @include font-size(28px, 40px);
-
-		// font-style: italic;
-		// font-weight: normal;
-		// letter-spacing: 1px;
-	}
-
-	.highlight-text__italic__small {
-
-		// @extend %header-font;
-		// @include font-size(20px, 24px);
-
-		// font-style: italic;
-		// font-weight: normal;
-		// letter-spacing: 1px;
 	}
 
 	.button--label {
@@ -81,7 +60,8 @@
 		text-transform: uppercase;
 		font-weight: $SEMIBOLD;
 		padding: 0;
-		// @include font-size(14px, 14px);
+		@include font-size(14px, 14px);
+		letter-spacing: 0.02rem;
 		@media (min-width: $BREAKPOINT_MEDIUM) {
 			@include font-size(14px, 14px);
 			letter-spacing: 0.025rem;
@@ -91,10 +71,14 @@
 	.body--normal {
 
 		@extend %normal-font;
-		letter-spacing: 0.025rem;
 		font-weight: $REGULAR;
 
-		// @include font-size(14px, 26px);
+		@include font-size(15px, 24px);
+
+		@media (min-width: $BREAKPOINT_MEDIUM) {
+			@include font-size(16px, 24px);
+			letter-spacing: 0.025rem;
+		}
 
 		a, a:hover, a:active {
 			color: inherit;
@@ -105,44 +89,6 @@
 			font-weight: $BOLD;
 			font-style: normal;
 		}
-
-		// &.heading {
-		// 	text-transform: uppercase;
-		// 	font-weight: bold;
-		// }
-
-		// &.disclaimer {
-		// 	@include font-size(11px, 17px);
-		// }
-	}
-
-	.body-text__big {
-
-		// @extend %normal-font;
-		// letter-spacing: 0;
-		// font-weight: normal;
-
-		// @include font-size(16px, 28px);
-
-		// a, a:hover, a:active {
-		// 	color: inherit;
-		// 	text-decoration: none;
-		// }
-	}
-
-	.body-text__small {
-
-		// @extend %normal-font;
-		// letter-spacing: 0;
-		// font-weight: normal;
-		// text-transform: uppercase;
-
-		// @include font-size(12px, 18px);
-
-		// a, a:hover, a:active {
-		// 	color: inherit;
-		// 	text-decoration: none;
-		// }
 	}
 }
 

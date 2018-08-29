@@ -4,7 +4,7 @@
 			<div class="introText">
 				<h1 class="introHeader header--medium"><?php echo $intro['header'];?></h1>
 				<h2 class="introTitle header--main"><?php echo $intro['title'];?></h2>
-				<a class="introTitleCTA block-button" data-label="block-button"><span class="label button--label"><?php echo $intro['cta'];?></span></a>
+				<a class="introTitleCTA block-button" href="<?php echo $intro['cta_link'];?>"><span class="label button--label"><?php echo $intro['cta'];?></span></a>
 			</div>
 		<!-- </div> -->
 		<div class="introScroll">

@@ -24,8 +24,12 @@
 		background-color: $GREEN;
 		user-select: none;
 		border-radius: 3px;
-		padding: 16px 30px 18px;
+		padding: 10px 24px 12px;
 		display: inline-block;
+
+		@media (min-width: $BREAKPOINT_NARROW) {
+			padding: 16px 30px 16px;
+		}
 
 		.label {
 			display: inline-block;
