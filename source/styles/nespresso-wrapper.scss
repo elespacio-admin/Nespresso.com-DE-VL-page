@@ -1,25 +1,47 @@
-body {
-	background-color: black;
-	margin: 0;
-	padding: 0;
-}
+@import 'core/motion';
+@import 'core/constants';
+@import 'core/mixins';
+@import 'core/media-queries';
 
 .nespresso-wrapper {
 
 	margin: 0 auto;
-	max-width: 996px;
+}
 
-	&.mobile-wrapper {
-		padding-top: 44px;
+.nespresso-header {
+	background-color: #000;
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	z-index: 100;
+	@include min-screen($BREAKPOINT_NARROW){
+	}
+	@include min-screen($BREAKPOINT_MEDIUM){
+		height: 80px;
+	}
 
-		.black-nespresso-bar {
-			position: fixed;
-			top: 0;
-			left: 0;
-			z-index: 15;
-			width: 100%;
-			background-color: #000;
-			height: 45px;
+	&--attached {
+		background-color: #111;
+		position: relative;
+		width: 100%;
+		height: $HEADER_SIZE_N;
+		@include min-screen($BREAKPOINT_NARROW){
+			height: $HEADER_SIZE_M;
 		}
+		@include min-screen($BREAKPOINT_MEDIUM){
+			height: $HEADER_SIZE_W;
+		}
+	}
+}
+
+.nespresso-footer {
+	background-color: #000;
+	width: 100%;
+	height: 520px;
+	@include min-screen($BREAKPOINT_NARROW){
+		height: 100px;
+	}
+	@include min-screen($BREAKPOINT_MEDIUM){
+		height: 100px;
 	}
 }
