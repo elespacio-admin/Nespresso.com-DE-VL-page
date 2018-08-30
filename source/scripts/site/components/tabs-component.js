@@ -84,12 +84,10 @@ site.components.TabsComponent.prototype.tabClickHandler = function(e) {
   
   this.$content.toggleClass('is-visible', false);
   if($target.hasClass('original')) {
-    console.log('XXX toggle original');
     this.$content.filter('.original').toggleClass('is-visible', true);
   }
   else {
-    console.log('XXX toggle vertuo');
-   this.$content.filter('.vertuo').toggleClass('is-visible', true); 
+    this.$content.filter('.vertuo').toggleClass('is-visible', true); 
   }
   
 }
