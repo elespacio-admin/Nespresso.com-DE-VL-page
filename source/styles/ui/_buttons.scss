@@ -37,6 +37,8 @@
 
 		&.transparent {
 			border: solid 2px $WHITE;
+			padding: 8px 24px 9px 24px;
+			color: $WHITE;
 			background-color: transparent;
 		}
 	}

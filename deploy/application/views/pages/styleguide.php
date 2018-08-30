@@ -43,6 +43,8 @@
 
 					<a href="#" class="block-button transparent" data-label="block-button"><span class="label button--label">block-button transparent</span></a>
 					<div class="code body-normal">{block-button.transparent}</div>
+					<a href="#" class="block-button transparent dark" data-label="block-button"><span class="label button--label">block-button transparent</span></a>
+					<div class="code body-normal">{block-button.dark}</div>
 					<button class="round-button plus"><span class="icon"></span></button>
 					<div class="code body-normal">{round-button.plus}</div>
 

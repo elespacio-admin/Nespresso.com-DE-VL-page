@@ -107,13 +107,24 @@
       "body": "<em>Nespresso</em> coffee specialists and experts are available online 24 hours a day. We're here when you need us on the mobile <em>Nespresso</em> app, the toll free phone number or in <em>Nespresso</em> stores to provide you with answers and solutions."
     },
     "expertise": {
-      "title": "Coffee expertise in a cup",
-      "header_a": "Uncompromising quality",
-      "body_a": "From the bean to your cup, the Nespresso AAA Sustainable Quality Program is supporting 45,000 farmers worldwide to grow high quality coffee.",
-      "header_b": "Sustainable coffee",
-      "body_b": "Get more out of your coffee with every cup of Nespresso knowing that we are committed to making a positive impact on the environment.",
-      "header_c": "Continued freshness",
-      "body_c": "The rich coffee flavours are protected from the outside by the recyclable aluminium capsules, while aromas are preserved on the inside.",
+      "title": "Coffee expertise<br class=\"not-narrow\"> in&nbsp;a&nbsp;cup",
+      "items":[
+        {
+          "id": "quality",
+          "header": "Uncompromising<br class=\"medium-only\"> quality",
+          "body": "From the bean to your cup, the <em>Nespresso</em> AAA Sustainable Quality Program is supporting 45,000 farmers worldwide to grow high quality coffee."
+        },
+        {
+          "id": "coffee",
+          "header": "Sustainable<br class=\"medium-only\"> coffee",
+          "body": "Get more out of your coffee with every cup of <em>Nespresso</em> knowing that we are committed to making a positive impact on the environment."
+        },
+        {
+          "id": "freshness",
+          "header": "Continued<br class=\"medium-only\"> freshness",
+          "body": "The rich coffee flavours are protected from the outside by the recyclable aluminium capsules, while aromas are preserved on the inside."
+        }
+      ],
       "cta": "Discover our sustainability vision",
       "cta_link": "#sustainability-missing-link"
     },

@@ -97,10 +97,28 @@
     }
   }
 
+
   br.wide {
     display: none;
 
     @include min-screen($BREAKPOINT_MEDIUM) {
+
+      display: inline;
+    }
+  }
+
+  br.not-wide {
+    display: inline;
+
+    @include min-screen($BREAKPOINT_NARROW) {
+
+      display: none;
+    }
+  }
+
+  br.medium-only {
+    display: none;
+    @include screen($BREAKPOINT_NARROW, $BREAKPOINT_MEDIUM - 1px) {
 
       display: inline;
     }

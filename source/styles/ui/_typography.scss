@@ -72,8 +72,6 @@
 		}
 	}
 
-
-
 	.header--small {
 		@extend %header-font;
 		font-weight: $REGULAR;
@@ -96,7 +94,7 @@
 		font-weight: $SEMIBOLD;
 		padding: 0;
 		@include font-size(14px, 14px);
-		letter-spacing: 0.02rem;
+		letter-spacing: 0.01rem;
 	}
 
 	.body--normal {
@@ -110,6 +108,19 @@
 		@media (min-width: $BREAKPOINT_NARROW) {
 			@include font-size(16px, 24px);
 			letter-spacing: 0.005rem;
+		}
+
+		&.small {
+
+			@media (min-width: $BREAKPOINT_NARROW) {
+				@include font-size(14px, 21px);
+				letter-spacing: 0.005rem;
+			}
+
+			@media (min-width: $BREAKPOINT_MEDIUM) {
+				@include font-size(16px, 24px);
+				letter-spacing: 0.005rem;
+			}
 		}
 
 		a, a:hover, a:active {

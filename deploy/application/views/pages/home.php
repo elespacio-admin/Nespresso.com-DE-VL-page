@@ -98,6 +98,21 @@
 			</div>
 		</div>
 	</section>
+	<section class="expertise">
+		<h2 class="expertiseTitle header--main"><?php echo $expertise['title'];?></h2>
+		<div class="expertiseSpacer"></div>
+		<div class="expertiseItems">
+			<?php foreach ($expertise['items'] as $item) { ?>
+				<div class="expertiseItem <?php echo $item['id'];?>">
+					<div class="expertiseItemGraphic"></div>
+					<h3 class="expertiseItemHeader header--medium"><?php echo $item['header'];?></h3>
+					<p class="expertiseItemBody body--normal small"><?php echo $item['body'];?></p>
+				</div>
+			<?php } ?>
+		</div>
+		<a href="<?php echo $expertise['cta_link'];?>" class="expertiseCTA block-button transparent"><span class="label button--label"><?php echo $expertise['cta'];?></span></a>
+		<div class="expertiseBackground"></div>
+	</section>
 </div>
 
 

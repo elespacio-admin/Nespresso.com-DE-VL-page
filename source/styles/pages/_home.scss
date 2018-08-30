@@ -459,4 +459,135 @@
 			}
 		}
 	}
+
+	.expertise {
+
+		padding-top: 37px;
+		color: $BLACK;
+		background-color: $WHITE;
+
+		@include min-screen($BREAKPOINT_NARROW) {
+			color: $WHITE;
+			padding: 57px 0;
+		}
+
+		@include min-screen($BREAKPOINT_MEDIUM) {
+			padding: 111px 0 68px 0;
+		}
+
+		&Title {
+			width: percentage(11/12);
+			margin: 0 auto;
+			z-index: 2;
+		}
+
+		&Spacer {
+			display: none;
+			@include min-screen($BREAKPOINT_NARROW) {
+				display: block;
+				width: 100%;
+				padding-top: 19%;
+			}
+			@include min-screen($BREAKPOINT_NARROW) {
+				padding-top: 20.5%;	
+			}
+		}
+
+		&Items {
+			padding: 17px 0 11px 0;
+			position: relative;
+			z-index: 2;
+			@include min-screen($BREAKPOINT_NARROW) {
+				width: percentage(11/12);
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				padding: 65px 0 55px 0;
+			}
+
+			@include min-screen($BREAKPOINT_MEDIUM) {
+				padding-bottom: 43px;
+			}
+		}
+
+		&Item {
+
+			> * {
+				display: block;
+				width: percentage(10/12);
+				margin: 0 auto;
+
+				@include min-screen($BREAKPOINT_NARROW) {
+					width: 100%;
+				}
+			}
+
+			@include min-screen($BREAKPOINT_NARROW) {
+				width: 30%;
+			}
+
+			&Graphic {
+				@include aspect-ratio(40px, 40px);
+				background-color: rgba(#666, 0.25);
+				width: 40px;
+				margin-bottom: 14px;
+			}
+
+			&Header {
+				padding-bottom: 12px;
+				@include min-screen($BREAKPOINT_NARROW) {
+					padding-bottom: 3px;
+				}
+
+				@include min-screen($BREAKPOINT_MEDIUM) {
+					padding-bottom: 9px;
+				}
+			}
+
+			&Body {
+				padding-bottom: 26px;
+				@include min-screen($BREAKPOINT_NARROW) {
+					padding-bottom: 0;
+				}
+			}
+		}
+
+		&CTA {
+			z-index: 2;
+			position: relative;
+			width: auto;
+			margin: 0 auto;
+			@include max-screen($BREAKPOINT_NARROW - 1px){
+				width: percentage(11/12);
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+				color: $BLACK !important;
+				border-color: $BLACK !important;
+			}
+		}
+		&Background {
+			@include aspect-ratio(320, 210);
+			z-index: 1;
+			width: 100%;
+			background: transparent url(#{$url_prefix}/assets/images/expertise-N.jpg) center center;
+			background-size: cover;
+			margin-top: 40px;
+
+			@include min-screen($BREAKPOINT_NARROW){
+				@include absoluteAll;
+				margin-top: 0;
+				background: transparent url(#{$url_prefix}/assets/images/expertise-M.jpg) center 30%;
+				background-size: cover;
+
+				&:before {
+					display: none;
+				}
+			}
+
+			@include min-screen($BREAKPOINT_MEDIUM){
+				background: transparent url(#{$url_prefix}/assets/images/expertise-W.jpg) center 10%;
+				background-size: cover;
+			}
+		}
+	}
 }
