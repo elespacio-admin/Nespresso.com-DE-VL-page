@@ -25,24 +25,41 @@
 
 		&Text {
 			padding-top: 40px;
+			@include min-screen($BREAKPOINT_NARROW){
+				// padding-top: percentage(50px/$BREAKPOINT_NARROW);
+				padding-top: 57px;
+			}
 			@include min-screen($BREAKPOINT_MEDIUM){
-				padding-top: percentage(60/1400);
+				// padding-top: percentage(60px/$BREAKPOINT_WIDE);
+				padding-top: 68px;
 			}
 		}
 
 		&Header {
 			display: block;
 			width: 100%;
-			margin-bottom: 4px;
+			margin-bottom: 6px;
+			@include min-screen($BREAKPOINT_NARROW){
+				margin-bottom: 19px;
+			}
+			@include min-screen($BREAKPOINT_MEDIUM){
+				margin-bottom: 6px;
+			}
 		}
 
 		&Title {
 			display: block;
+			margin: 0 auto 18px auto;
 			width: percentage(11/12);
 			@include min-screen($BREAKPOINT_NARROW){
-				width: percentage(7/12);
+				width: percentage(9/12);
+				margin-bottom: 20px;
 			}
-			margin: 0 auto 12px auto;
+			@include min-screen($BREAKPOINT_MEDIUM){
+				width: percentage(7/12);
+				margin-bottom: 12px;
+			}
+			
 			max-width: 750px;
 		}
 
@@ -50,9 +67,14 @@
 			width: 100%;
 			position: absolute;
 			bottom: 0;
-			padding-bottom: 40px;
+			padding-bottom: 60px;
+			@include min-screen($BREAKPOINT_NARROW){
+				// padding-bottom: percentage(50px/$BREAKPOINT_NARROW);
+				padding-bottom: 44px;
+			}
 			@include min-screen($BREAKPOINT_MEDIUM){
-				padding-bottom: percentage(60/1400);
+				// padding-bottom: percentage(60px/$BREAKPOINT_WIDE);
+				padding-bottom: 53px;
 			}
 			left: 0;
 
@@ -64,6 +86,7 @@
 			&Icon {
 				display: block;
 				width: 20px;
+				margin-top: 3px;
 				margin-left: -10px;
 				height: 11px;
 				position: absolute;
@@ -99,10 +122,11 @@
 		position: relative;
 
 		@include min-screen($BREAKPOINT_NARROW){
-			padding-top: 110px;
+			padding-top: 65px;
 		}
 
 		@include min-screen($BREAKPOINT_MEDIUM){
+			padding-top: 110px;
 			&:before {
 				content: "";
 				position: absolute;
@@ -122,7 +146,12 @@
 			width: percentage(11/12);
 			margin-bottom: 40px;
 			@include min-screen($BREAKPOINT_NARROW){
-				margin-bottom: 0;
+				margin-bottom: 60px;
+			}
+			@include min-screen($BREAKPOINT_MEDIUM){
+				margin-bottom: 68px;
+				width: percentage(8/12);
+				max-width: 950px;
 			}
 		}
 
@@ -161,17 +190,44 @@
 		}
 
 		&Container {
-			padding-top: 25px;
-
+			padding: 25px 0 0 0;
 			display: none;
 
 			@include min-screen($BREAKPOINT_MEDIUM){
 				display: block;
 				width: 50%;
+				padding-bottom: 114px;
 			}
 
 			&.is-visible {
 				display: block;
+			}
+
+			&GraphicText {
+				position: absolute;
+				display: none;
+				user-select: none;
+				pointer-events: none;
+				@include min-screen($BREAKPOINT_NARROW){
+					display: block;
+					top: 110px;
+				}
+
+				@include min-screen($BREAKPOINT_MEDIUM){
+					top: -10px;
+				}
+
+				&.original {
+					color: $WHITE;
+					left: -29px;
+					opacity: 0.1;
+				}
+
+				&.vertuo {
+					color: $BLACK;
+					right: -29px;
+					opacity: 0.15;	
+				}
 			}
 
 			&.original {
@@ -179,6 +235,7 @@
 				background-color: $BLACK;
 				@include min-screen($BREAKPOINT_MEDIUM){
 					background-color: transparent;
+					padding-left: 4.5%;
 				}
 			}
 			&.vertuo {
@@ -186,6 +243,7 @@
 				background-color: #F6F6F6;
 				@include min-screen($BREAKPOINT_MEDIUM){
 					background-color: transparent;
+					padding-right: 4.5%;
 				}
 			}
 		}
@@ -194,7 +252,12 @@
 			padding-bottom: 30px;
 			> * {
 				width: percentage(11/12);
+				display: block;
 				margin: 0 auto;
+				@include min-screen($BREAKPOINT_NARROW) {
+					width: percentage(7/12);
+					max-width: 460px;
+				}
 			}
 			&Graphic {
 				height: 200px;
@@ -202,17 +265,25 @@
 			}
 			&Header {
 				padding: 15px 0 5px 0;
+				@include min-screen($BREAKPOINT_NARROW){
+					padding-bottom: 8px;
+				}
+				@include min-screen($BREAKPOINT_MEDIUM){
+					padding-bottom: 7px;
+				}
 			}
 			&Title {
 				padding-bottom: 15px;
+				@include min-screen($BREAKPOINT_NARROW){
+					padding-bottom: 6px;
+				}
 				@include min-screen($BREAKPOINT_MEDIUM){
-					padding-bottom: 20px;
+					padding-bottom: 16px;
 				}
 			}
 			&CTA {
 				position: relative;
-				padding-top: 20px;
-				padding-bottom: 35px;
+				padding: 25px 0 13px 0;
 				display: none;
 				@include min-screen($BREAKPOINT_MEDIUM){
 					display: block;
@@ -222,7 +293,7 @@
 				}
 				&Button {
 					position: absolute;
-					top: 55px;
+					top: 58px;
 					left: 50%;
 					margin-left: -18px;
 					@include min-screen($BREAKPOINT_MEDIUM){
@@ -233,6 +304,10 @@
 			&Features {
 				display: flex;
 				justify-content: space-evenly;
+				@include min-screen($BREAKPOINT_MEDIUM){
+					width: 85%;
+					max-width: 670px;
+				}
 			}
 			&Feature {
 				width: percentage(160/320);

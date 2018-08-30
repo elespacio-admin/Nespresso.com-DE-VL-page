@@ -22,6 +22,7 @@
 		</div>
 		<div class="choiceOptions">
 			<div id="choice-original" class="choiceContainer original is-visible">
+				<span class="choice--label choiceContainerGraphicText original">O<br>r<br>i<br>g<br>i<br>n<br>a<br>l</span>
 				<?php foreach ($choice['original'] as $choiceItem) { ?>
 					<div class="choiceItem <?php echo $choiceItem['class'];?>">
 						<div class="choiceItemGraphic"></div>
@@ -48,6 +49,7 @@
 				<?php } ?>
 			</div>
 			<div id="choice-vertuo" class="choiceContainer vertuo">
+				<span class="choice--label choiceContainerGraphicText vertuo">V<br>e<br>r<br>t<br>u<br>o</span>
 				<?php foreach ($choice['vertuo'] as $choiceItem) { ?>
 					<div class="choiceItem <?php echo $choiceItem['class'];?>">
 						<div class="choiceItemGraphic"></div>
