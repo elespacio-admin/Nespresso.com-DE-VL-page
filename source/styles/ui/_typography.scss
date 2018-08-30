@@ -7,6 +7,11 @@
 		@include font-size(32px, 40px);
 		letter-spacing: 0.25rem;
 		
+		@media (min-width: $BREAKPOINT_NARROW) {
+			@include font-size(36px, 48px);
+			letter-spacing: 0.3rem;
+		}
+
 		@media (min-width: $BREAKPOINT_MEDIUM) {
 			@include font-size(48px, 64px);
 			letter-spacing: 0.375rem;
@@ -19,6 +24,11 @@
 		font-weight: $LIGHT;
 		@include font-size(26px, 36px);
 		letter-spacing: 0.25rem;
+
+		@media (min-width: $BREAKPOINT_NARROW) {
+			@include font-size(30px, 40px);
+			letter-spacing: 0.31rem;
+		}
 		
 		@media (min-width: $BREAKPOINT_MEDIUM) {
 			@include font-size(36px, 48px);
@@ -32,7 +42,7 @@
 		font-weight: $EXTRABOLD;
 		@include font-size(17px, 24px);
 
-		@media (min-width: $BREAKPOINT_MEDIUM) {
+		@media (min-width: $BREAKPOINT_NARROW) {
 			@include font-size(18px, 24px);
 			letter-spacing: 0.075rem;
 		}
@@ -62,10 +72,6 @@
 		padding: 0;
 		@include font-size(14px, 14px);
 		letter-spacing: 0.02rem;
-		@media (min-width: $BREAKPOINT_MEDIUM) {
-			@include font-size(14px, 14px);
-			letter-spacing: 0.025rem;
-		}
 	}
 
 	.body--normal {
@@ -75,7 +81,7 @@
 
 		@include font-size(15px, 24px);
 
-		@media (min-width: $BREAKPOINT_MEDIUM) {
+		@media (min-width: $BREAKPOINT_NARROW) {
 			@include font-size(16px, 24px);
 			letter-spacing: 0.025rem;
 		}
