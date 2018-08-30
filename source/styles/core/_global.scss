@@ -80,11 +80,11 @@
 
   // line breaks
   br.narrow {
-    display: none;
+    display: inline;
 
-    @include max-screen($BREAKPOINT_NARROW) {
+    @include min-screen($BREAKPOINT_NARROW) {
 
-      display: inline;
+      display: none;
     }
   }
 
@@ -92,6 +92,15 @@
     display: none;
 
     @include min-screen($BREAKPOINT_NARROW) {
+
+      display: inline;
+    }
+  }
+
+  br.wide {
+    display: none;
+
+    @include min-screen($BREAKPOINT_MEDIUM) {
 
       display: inline;
     }

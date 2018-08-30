@@ -77,6 +77,27 @@
 			</div>
 		</div>
 	</section>
+	<section class="services">
+		<h2 class="servicesTitle header--main"><?php echo $services['title'];?></h2>
+		<ul class="servicesItems">
+			<?php foreach ($services['items'] as $item) { ?>
+				<li class="servicesItem">
+					<div class="servicesItemGraphic"></div>
+					<p class="servicesItemLabel list--label"><?php echo $item['label'];?></p>
+				</li>
+			<?php } ?>
+		</ul>
+		<div class="servicesContent">
+			<div class="servicesGraphic">
+				<div class="servicesGraphicContent"></div>
+			</div>
+			<div class="servicesText">
+				<h3 class="servicesTextHeader header--medium"><?php echo $services['header'];?></h3>
+				<h4 class="servicesTextTitle header--slim"><?php echo $services['callout_title'];?></h4>
+				<h4 class="servicesTextBody body--normal"><?php echo $services['body'];?></h4>
+			</div>
+		</div>
+	</section>
 </div>
 
 

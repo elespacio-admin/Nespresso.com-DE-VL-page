@@ -80,9 +80,30 @@
     },
     "services": {
       "title": "exclusive personal services",
-      "items": ["order<br>by internet","order on<br>mobile app","order<br>by phone","order<br>in boutique","easy<br>order"],
+      "items": [
+        { 
+          "id": "internet",
+          "label": "order<br>by internet"
+        },
+        {
+          "id": "app",
+          "label": "order on<br>mobile app"
+        },
+        {
+          "id": "phone",
+          "label": "order<br>by phone"
+        },
+        {
+          "id": "boutique",
+          "label": "order<br>in boutique"
+        },
+        {
+          "id": "easy",
+          "label": "easy<br>order"
+        }
+      ],
       "header": "Available all day",
-      "callout": "Make your<br>order now",
+      "callout_title": "Make your<br class=\"narrow\"><br class=\"wide\">order now",
       "body": "<em>Nespresso</em> coffee specialists and experts are available online 24 hours a day. We're here when you need us on the mobile <em>Nespresso</em> app, the toll free phone number or in <em>Nespresso</em> stores to provide you with answers and solutions."
     },
     "expertise": {

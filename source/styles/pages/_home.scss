@@ -120,6 +120,7 @@
 		background-color: $WHITE;
 		padding-top: 40px;
 		position: relative;
+		overflow: hidden;
 
 		@include min-screen($BREAKPOINT_NARROW){
 			padding-top: 65px;
@@ -330,6 +331,131 @@
 				&Label {
 					margin-top: 15px;
 				}
+			}
+		}
+	}
+
+	.services {
+		color: $WHITE;
+		background-color: #1E1E1E;
+		padding: 42px percentage(0.5/12) 48px percentage(0.5/12);
+
+		@include min-screen($BREAKPOINT_NARROW){
+			padding: 90px percentage(0.5/12) 69px percentage(0.5/12);			
+		}
+
+		@include min-screen($BREAKPOINT_MEDIUM){
+			padding: 103px percentage(1/12) 69px percentage(1/12);			
+		}
+
+		&Title {
+			max-width: 490px;
+			margin: 0 auto 43px auto;
+			@include min-screen($BREAKPOINT_NARROW){
+				margin-bottom: 63px;	
+			}
+			@include min-screen($BREAKPOINT_MEDIUM){
+				max-width: none;
+			}
+		}
+
+		&Items {
+			width: 100%;
+			height: 120px;
+			margin-bottom: 38px;
+			@include min-screen($BREAKPOINT_NARROW){
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 76px;
+			}
+		}
+		&Item {
+			display: none;
+			width: 100%;
+			&:first-child {
+				display: block;
+			}
+			@include min-screen($BREAKPOINT_NARROW){
+				display: block;
+				width: 135px;
+			}
+			&Graphic {
+				margin: 0 auto;
+				width: 58px;
+				height: 48px;
+				background-color: rgba(#666, 0.25);
+			}
+
+			&Label {
+				padding-top: 15px;
+
+				@include min-screen($BREAKPOINT_MEDIUM){
+					padding-top: 19px;
+				}
+			}
+		}
+
+		&Content {
+			@include min-screen($BREAKPOINT_MEDIUM){
+				display: flex;
+				flex-direction: row-reverse;
+				justify-content: space-between;
+			}
+		}
+
+		&Graphic {
+			width: 258px;
+    	margin: 0 auto 14px auto;
+
+    	@include min-screen($BREAKPOINT_NARROW){
+    		width: 450px;
+    		margin-bottom: 19px;
+    	}
+    	@include min-screen($BREAKPOINT_MEDIUM){
+    		width: 55%;
+    		margin: 0;
+    	}
+
+    	&Content {
+    		@include aspect-ratio(431, 307);
+    		width: 100%;
+				background-color: rgba(#666, 0.25);
+				@include min-screen($BREAKPOINT_MEDIUM){
+					width: 95%;
+				}
+    	}
+		}
+
+		&Text {
+
+			> * {
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+				@include min-screen($BREAKPOINT_NARROW){
+					width: 450px;
+				}
+			}
+
+			@include min-screen($BREAKPOINT_MEDIUM){
+    		width: 40%;
+    		padding-top: 49px;
+    		> * {
+					width: percentage(3/4);
+				}
+    	}	
+
+			&Header {
+				padding-bottom: 4px;
+				@include min-screen($BREAKPOINT_NARROW){
+					padding-bottom: 12px;
+				}
+				@include min-screen($BREAKPOINT_MEDIUM){
+					padding-bottom: 8px;
+				}
+			}
+			&Title {
+				padding-bottom: 18px;
 			}
 		}
 	}
