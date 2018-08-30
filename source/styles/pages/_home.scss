@@ -14,6 +14,8 @@
 		height: calc(100vh - #{$HEADER_SIZE_N});
 		@include min-screen($BREAKPOINT_NARROW){
 			height: calc(100vh - #{$HEADER_SIZE_M});
+			background: #ebe5df url(#{$url_prefix}/assets/images/intro-M.jpg) center 85%;
+			background-size: cover;
 		}
 		@include min-screen($BREAKPOINT_MEDIUM){
 			height: calc(100vh - #{$HEADER_SIZE_W});
