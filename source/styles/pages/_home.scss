@@ -190,8 +190,12 @@
 		}
 
 		&Container {
-			padding: 25px 0 0 0;
+			padding: 25px 0 5px 0;
 			display: none;
+
+			@include min-screen($BREAKPOINT_NARROW){
+				padding-bottom: 56px;
+			}
 
 			@include min-screen($BREAKPOINT_MEDIUM){
 				display: block;
@@ -249,7 +253,11 @@
 		}
 
 		&Item {
-			padding-bottom: 30px;
+			padding-bottom: 38px;
+			@include min-screen($BREAKPOINT_MEDIUM){
+				padding-bottom: 30px;
+			}
+
 			> * {
 				width: percentage(11/12);
 				display: block;
