@@ -5,11 +5,11 @@
   },
   "home": {
     "header" : {
-      "title" : "<em>Nespresso</em> | Original & Vertuo",
-      "og_title" : "<em>Nespresso</em> | Original & Vertuo",
+      "title" : "Nespresso | Original & Vertuo",
+      "og_title" : "Nespresso | Original & Vertuo",
       "og_description" : "discover two unique coffee experiences",
       "og_image" : "positivecup.jpg",
-      "og_site_name" : "<em>Nespresso</em> | Original & Vertuo",
+      "og_site_name" : "Nespresso | Original & Vertuo",
       "og_url" : "/"
     },
     "intro": {
