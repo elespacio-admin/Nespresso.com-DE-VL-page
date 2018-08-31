@@ -19,9 +19,11 @@
 		<div class="constraint-wrapper">
 			<div class="choiceTabs">
 				<button class="choiceTab original">
+					<img src="<?php echo $settings['base_url'].'/assets/images/choice-tab-original.png'?>" alt="<?php echo $choice['original_alt'];?>">
 					<span class="choiceTabLabel header--medium"><?php echo $choice['original_label'];?></span>
 				</button>
 				<button class="choiceTab vertuo">
+					<img src="<?php echo $settings['base_url'].'/assets/images/choice-tab-vertuo.png'?>" alt="<?php echo $choice['vertuo_alt'];?>">
 					<span class="choiceTabLabel header--medium"><?php echo $choice['vertuo_label'];?></span>
 				</button>
 			</div>
@@ -29,8 +31,10 @@
 				<div id="choice-original" class="choiceContainer original is-visible">
 					<span class="choice--label choiceGraphicText original inner">O<br>r<br>i<br>g<br>i<br>n<br>a<br>l</span>
 					<?php foreach ($choice['original'] as $choiceItem) { ?>
-						<div class="choiceItem <?php echo $choiceItem['class'];?>">
-							<div class="choiceItemGraphic"></div>
+						<div class="choiceItem">
+							<div class="choiceItemGraphic <?php echo $choiceItem['class'];?>">
+								<img src="<?php echo $settings['base_url'].'/assets/images/'.$choiceItem['image']?>" alt="<?php echo $choiceItem['image'];?>">
+							</div>
 							<h3 class="choiceItemHeader header--medium"><?php echo $choiceItem['header'];?></h3>
 							<h4 class="choiceItemTitle header--slim"><?php echo $choiceItem['title'];?></h4>
 							<p class="choiceItemBody body--normal"><?php echo $choiceItem['body'];?></p>
@@ -56,8 +60,10 @@
 				<div id="choice-vertuo" class="choiceContainer vertuo">
 					<span class="choice--label choiceGraphicText vertuo inner">V<br>e<br>r<br>t<br>u<br>o</span>
 					<?php foreach ($choice['vertuo'] as $choiceItem) { ?>
-						<div class="choiceItem <?php echo $choiceItem['class'];?>">
-							<div class="choiceItemGraphic"></div>
+						<div class="choiceItem">
+							<div class="choiceItemGraphic <?php echo $choiceItem['class'];?>">
+								<img src="<?php echo $settings['base_url'].'/assets/images/'.$choiceItem['image']?>" alt="<?php echo $choiceItem['image'];?>">
+							</div>
 							<h3 class="choiceItemHeader header--medium"><?php echo $choiceItem['header'];?></h3>
 							<h4 class="choiceItemTitle header--slim"><?php echo $choiceItem['title'];?></h4>
 							<p class="choiceItemBody body--normal"><?php echo $choiceItem['body'];?></p>
@@ -89,14 +95,17 @@
 			<ul class="servicesItems">
 				<?php foreach ($services['items'] as $item) { ?>
 					<li class="servicesItem">
-						<div class="servicesItemGraphic"></div>
+						<div class="servicesItemGraphic">
+						</div>
 						<p class="servicesItemLabel list--label"><?php echo $item['label'];?></p>
 					</li>
 				<?php } ?>
 			</ul>
 			<div class="servicesContent">
 				<div class="servicesGraphic">
-					<div class="servicesGraphicContent"></div>
+					<div class="servicesGraphicContent">
+						<img src="<?php echo $settings['base_url']?>/assets/images/services-devices.png" alt="<?php echo $services['alt'];?>">
+					</div>
 				</div>
 				<div class="servicesText">
 					<h3 class="servicesTextHeader header--medium"><?php echo $services['header'];?></h3>
@@ -127,7 +136,9 @@
 		<div class="constraint-wrapper">
 			<h2 class="memberHeader header--medium"><?php echo $member['header'];?></h2>
 			<h3 class="memberTitle header--main"><?php echo $member['title'];?></h3>
-			<div class="memberGraphic"></div>
+			<div class="memberGraphic">
+				<img src="<?php echo $settings['base_url']?>/assets/images/member-packages.png" alt="<?php echo $member['alt'];?>">
+			</div>
 			<h4 class="memberCallout header--slim"><?php echo $member['callout'];?></h4>
 			<p class="memberBody body--normal"><?php echo $member['body'];?></p>
 			<a class="memberCTA block-button" href="<?php echo $member['cta_link'];?>"><span class="label button--label"><?php echo $member['cta'];?></span></a>

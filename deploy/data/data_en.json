@@ -23,6 +23,8 @@
       "title":"Choose your coffee range, machine &amp; accessories",
       "original_label": "original<br> range",
       "vertuo_label": "vertuo<br> range",
+      "original_alt": "Original capsule",
+      "vertuo_alt": "Vertuo capsule",
       "original":[
         {
           "class": "range",
@@ -31,7 +33,9 @@
           "body": "Choose from a wide range of <em><em>Nespresso</em></em> coffee capsules, each with its own distinct individual character and aroma. You can never have too much choice. No two <em><em>Nespresso</em></em> flavours are the same.",
           "cta": "Discover Original Coffee Range",
           "feature_a": "exceptional espresso variety",
-          "feature_b": "creamy and dense crema"
+          "feature_b": "creamy and dense crema",
+          "image": "choice-range-original.png",
+          "alt": "Original range capsules"
         },
         {
           "class": "machine",
@@ -40,14 +44,18 @@
           "body": "For those of you who like espresso coffees, the technology in <em><em>Nespresso</em></em> Original machines uses a high-pressure extraction system to give you that fresh aroma from each <em><em>Nespresso</em></em> capsule.",
           "cta": "Discover Original Machine Range",
           "feature_a": "pressure extraction system",
-          "feature_b": "espresso-based and milk recipes"
+          "feature_b": "espresso-based and milk recipes",
+          "image": "choice-machine-original.png",
+          "alt": "Original range machine"
         },
         {
           "class": "accessories",
           "header": "original accessories",
           "title": "the finest coffee<br> special accesories",
           "body": "Refine your moments of enjoyment with our accessory collections - the perfect combination of form and function.<br> Cups and glasses for every coffee specialty as well as capsule dispensers for the perfect storage of your favorite coffees.",
-          "cta": "Discover Original Accessories"
+          "cta": "Discover Original Accessories",
+          "image": "choice-accessories-original.png",
+          "alt": "Original accessories"
         }
       ],
       "vertuo": [
@@ -58,7 +66,9 @@
           "body": "Vertuo coffee capsules come in all different shapes and sizes. 25 blends and five cup sizes to be exact.<br> Each blend is specially made for each size to indulge yourself, at any time of the day. ",
           "cta": "Discover Vertuo Coffee Range",
           "feature_a": "Fullbodied coffee pleasure in a big mug",
-          "feature_b": "Generous and smooth crema"
+          "feature_b": "Generous and smooth crema",
+          "image": "choice-range-vertuo.png",
+          "alt": "Vertuo range capsules"
         },
         {
           "class": "machine",
@@ -67,14 +77,18 @@
           "body": "For those of you who prefer a lager cup of coffee. The capsule spins up to 7,000 rotations per minute, blending ground coffee with water and producing the perfect crema to enjoy quality coffee in larger cup sizes.",
           "cta": "Discover Vertuo Machine Range",
           "feature_a": "Innovative coffee system",
-          "feature_b": "Extraction by centrifusion&trade;"
+          "feature_b": "Extraction by centrifusion&trade;",
+          "image": "choice-machine-vertuo.png",
+          "alt": "Vertuo range machine"
         },
         {
           "class": "accessories",
           "header": "vertuo accessories",
           "title": "awaken<br> your senses",
           "body": "Designer Konstantin Grcic combined the senses of taste, smell and sight to create a variety of accessories made for a wide range of <em>Nespresso</em> Vertuo coffee experiences.<br>Time to get inspired!",
-          "cta": "Discover Vertuo Accessories"
+          "cta": "Discover Vertuo Accessories",
+          "image": "choice-accessories-vertuo.png",
+          "alt": "Vertuo accessories"
         }
       ]
     },
@@ -104,7 +118,8 @@
       ],
       "header": "Available all day",
       "callout_title": "Make your<br class=\"narrow\"><br class=\"wide\">order now",
-      "body": "<em>Nespresso</em> coffee specialists and experts are available online 24 hours a day. We're here when you need us on the mobile <em>Nespresso</em> app, the toll free phone number or in <em>Nespresso</em> stores to provide you with answers and solutions."
+      "body": "<em>Nespresso</em> coffee specialists and experts are available online 24 hours a day. We're here when you need us on the mobile <em>Nespresso</em> app, the toll free phone number or in <em>Nespresso</em> stores to provide you with answers and solutions.",
+      "alt": "Services illustration"
     },
     "expertise": {
       "title": "Coffee expertise<br class=\"not-narrow\"> in&nbsp;a&nbsp;cup",
@@ -134,7 +149,8 @@
       "callout": "get an exclusive gift",
       "body": "By buying a pre-selected<br class=\"narrow\"><br class=\"wide\"> coffee assortment",
       "cta":"Become a member",
-      "cta_link": "#member-missing-link"
+      "cta_link": "#member-missing-link",
+      "alt": "Nespresso capsules packages"
     }
   }
 }

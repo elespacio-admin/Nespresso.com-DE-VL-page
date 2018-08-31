@@ -179,6 +179,7 @@
 		}
 
 		&Tab {
+			position: relative;
 			display: block;
 			padding: 125px 0 15px 0;
 			width: 50%;
@@ -188,7 +189,18 @@
 			}
 			&.vertuo {
 				color: $BLACK;
-				background-color: #F6F6F6;
+				background-color: $WHITE;
+			}
+
+			img {
+				@include absoluteTL(42px, 50%);
+				display: block;
+				width: 122px;
+				margin-left: -61px;
+
+				@include min-screen($BREAKPOINT_NARROW){
+					top: 36px;
+				}
 			}
 		}
 
@@ -202,17 +214,17 @@
 		}
 
 		&Container {
-			padding: 25px 0 5px 0;
+			padding: 65px 0 5px 0;
 			display: none;
 
 			@include min-screen($BREAKPOINT_NARROW){
-				padding-bottom: 56px;
+				padding: 81px 0 56px 0;
 			}
 
 			@include min-screen($BREAKPOINT_MEDIUM){
 				display: block;
 				width: 50%;
-				padding-bottom: 114px;
+				padding: 65px 0 114px 0;	
 			}
 
 			&.is-visible {
@@ -232,21 +244,24 @@
 			}
 			&.vertuo {
 				color: $BLACK;
-				background-color: #F6F6F6;
+				background-color: $WHITE;
 				@include min-screen($BREAKPOINT_MEDIUM){
 					background-color: transparent;
 					padding-right: 4.5%;
 				}
 				@include min-screen($BREAKPOINT_WIDE){
-					padding-right: 0;
+					padding-left: 0;
 				}
 			}
 		}
 
 		&Item {
 			padding-bottom: 38px;
+			@include min-screen($BREAKPOINT_NARROW) {
+				padding-bottom: 75px;
+			}
 			@include min-screen($BREAKPOINT_MEDIUM){
-				padding-bottom: 30px;
+				padding-bottom: 135px;
 			}
 
 			> * {
@@ -264,8 +279,42 @@
 				}
 			}
 			&Graphic {
-				height: 200px;
-				background-color: rgba(#888, 0.25);
+				img {
+					@include absoluteTL;
+					width: 100%;
+				}
+				&.range {
+					@include aspect-ratio(464, 315);
+					width: 200px;
+					margin-bottom: -47px;
+					@include min-screen($BREAKPOINT_MEDIUM){
+						width: 300px;
+						margin-bottom: -51px;
+					}
+				}
+
+				&.machine {
+					@include aspect-ratio(147, 364);
+					width: 86px;
+					margin-bottom: -29px;
+					@include min-screen($BREAKPOINT_MEDIUM){
+						width: 96px;
+						margin-bottom: -12px;
+					}
+				}
+
+				&.accessories {
+					@include aspect-ratio(540, 432);
+					width: 260px;
+					margin-bottom: -47px;
+					@include min-screen($BREAKPOINT_NARROW) {
+						margin-bottom: -24px;
+					}
+					@include min-screen($BREAKPOINT_MEDIUM){
+						width: 360px;
+						margin-bottom: -53px;
+					}
+				}
 			}
 			&Header {
 				padding: 15px 0 5px 0;
@@ -464,9 +513,13 @@
     	&Content {
     		@include aspect-ratio(431, 307);
     		width: 100%;
-				background-color: rgba(#888, 0.25);
 				@include min-screen($BREAKPOINT_MEDIUM){
 					width: 95%;
+				}
+
+				img {
+					@include absoluteTL;
+					width: 100%;
 				}
     	}
 		}
@@ -685,8 +738,7 @@
 		}
 
 		&Graphic {
-			background-color: rgba(#888, 0.25);
-			@include aspect-ratio(235,154);
+			@include aspect-ratio(565, 348);
 			width: 235px;
 			margin: 0 auto -3px auto;
 			@include min-screen($BREAKPOINT_NARROW){
@@ -694,6 +746,11 @@
 				margin-bottom: 0;
 			}
 			@include min-screen($BREAKPOINT_MEDIUM){}
+
+			img {
+				@include absoluteTL;
+				width: 100%;
+			}
 		}
 
 		&Callout {
