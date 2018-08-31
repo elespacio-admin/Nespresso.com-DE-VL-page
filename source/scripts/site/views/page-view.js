@@ -46,28 +46,6 @@ site.views.Page.prototype.initPage = function() {
   });
 
   el.core.managers.layoutManager.resize();
-
-  // parse share links and make them open popups on desktop
-  if(el.core.utils.environment.isDesktop()) {
-
-    $('a.share-btn').each(function(){
-
-      var $this = $(this);
-
-      $this.on('click', function(e){
-
-        e.preventDefault();
-
-        var winWidth = 520;
-        var winHeight = 320;
-        var winLeft = (el.core.utils.environment.getScreenWidth() / 2) - (winWidth / 2);
-        var winTop = (el.core.utils.environment.getScreenHeight() / 2) - (winHeight / 2);
-
-        window.open($this.attr('href'), $this.data('title') ,'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
-      });
-    });
-  }
-
 }
 
 site.views.Page.prototype.resize = function(size) {

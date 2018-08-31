@@ -1,5 +1,4 @@
 // @codekit-prepend "libs/jvent.js"
-// @codekit-prepend "libs/bowser.js"
 
 // @codekit-prepend "core/utils/namespace.js"
 // @codekit-prepend "core/utils/class.js"
@@ -17,6 +16,7 @@
 
 // @codekit-prepend "site/components/base-component.js"
 // @codekit-prepend "site/components/tabs-component.js"
+// @codekit-prepend "site/components/services-component.js"
 
 // @codekit-prepend "site/views/page-view.js"
 
