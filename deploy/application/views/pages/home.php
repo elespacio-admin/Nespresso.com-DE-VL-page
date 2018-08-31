@@ -12,114 +12,126 @@
 	</section>
 	<section class="choice" data-component="TabsComponent">
 		<h2 class="choiceTitle header--main"><?php echo $choice['title'];?></h2>
-		<div class="choiceTabs">
-			<button class="choiceTab original">
-				<span class="choiceTabLabel header--medium"><?php echo $choice['original_label'];?></span>
-			</button>
-			<button class="choiceTab vertuo">
-				<span class="choiceTabLabel header--medium"><?php echo $choice['vertuo_label'];?></span>
-			</button>
+		<div class="choiceGraphicTexts">
+			<span class="choice--label choiceGraphicText original outer">O<br>r<br>i<br>g<br>i<br>n<br>a<br>l</span>
+			<span class="choice--label choiceGraphicText vertuo outer">V<br>e<br>r<br>t<br>u<br>o</span>
 		</div>
-		<div class="choiceOptions">
-			<div id="choice-original" class="choiceContainer original is-visible">
-				<span class="choice--label choiceContainerGraphicText original">O<br>r<br>i<br>g<br>i<br>n<br>a<br>l</span>
-				<?php foreach ($choice['original'] as $choiceItem) { ?>
-					<div class="choiceItem <?php echo $choiceItem['class'];?>">
-						<div class="choiceItemGraphic"></div>
-						<h3 class="choiceItemHeader header--medium"><?php echo $choiceItem['header'];?></h3>
-						<h4 class="choiceItemTitle header--slim"><?php echo $choiceItem['title'];?></h4>
-						<p class="choiceItemBody body--normal"><?php echo $choiceItem['body'];?></p>
-						<div class="choiceItemCTA">
-							<span class="choiceItemCTALabel body--normal"><?php echo $choiceItem['cta'];?></span>
-							<button class="choiceItemCTAButton round-button plus"><span class="icon"></span></button>
-						</div>
-						<?php if(isset($choiceItem['feature_a'])):?>
-							<div class="choiceItemFeatures">
-								<div class="choiceItemFeature">
-									<div class="choiceItemFeatureGraphic"></div>
-									<p class="choiceItemFeatureLabel header--medium"><?php echo $choiceItem['feature_a'];?></p>
-								</div>
-								<div class="choiceItemFeature">
-									<div class="choiceItemFeatureGraphic"></div>
-									<p class="choiceItemFeatureLabel header--medium"><?php echo $choiceItem['feature_b'];?></p>
-								</div>
-							</div>
-						<?php endif; ?>
-					</div>
-				<?php } ?>
+		<div class="constraint-wrapper">
+			<div class="choiceTabs">
+				<button class="choiceTab original">
+					<span class="choiceTabLabel header--medium"><?php echo $choice['original_label'];?></span>
+				</button>
+				<button class="choiceTab vertuo">
+					<span class="choiceTabLabel header--medium"><?php echo $choice['vertuo_label'];?></span>
+				</button>
 			</div>
-			<div id="choice-vertuo" class="choiceContainer vertuo">
-				<span class="choice--label choiceContainerGraphicText vertuo">V<br>e<br>r<br>t<br>u<br>o</span>
-				<?php foreach ($choice['vertuo'] as $choiceItem) { ?>
-					<div class="choiceItem <?php echo $choiceItem['class'];?>">
-						<div class="choiceItemGraphic"></div>
-						<h3 class="choiceItemHeader header--medium"><?php echo $choiceItem['header'];?></h3>
-						<h4 class="choiceItemTitle header--slim"><?php echo $choiceItem['title'];?></h4>
-						<p class="choiceItemBody body--normal"><?php echo $choiceItem['body'];?></p>
-						<div class="choiceItemCTA">
-							<span class="choiceItemCTALabel body--normal"><?php echo $choiceItem['cta'];?></span>
-							<button class="choiceItemCTAButton round-button plus"><span class="icon"></span></button>
-						</div>
-						<?php if(isset($choiceItem['feature_a'])):?>
-							<div class="choiceItemFeatures">
-								<div class="choiceItemFeature">
-									<div class="choiceItemFeatureGraphic"></div>
-									<p class="choiceItemFeatureLabel header--medium"><?php echo $choiceItem['feature_a'];?></p>
-								</div>
-								<div class="choiceItemFeature">
-									<div class="choiceItemFeatureGraphic"></div>
-									<p class="choiceItemFeatureLabel header--medium"><?php echo $choiceItem['feature_b'];?></p>
-								</div>
+			<div class="choiceOptions">
+				<div id="choice-original" class="choiceContainer original is-visible">
+					<span class="choice--label choiceGraphicText original inner">O<br>r<br>i<br>g<br>i<br>n<br>a<br>l</span>
+					<?php foreach ($choice['original'] as $choiceItem) { ?>
+						<div class="choiceItem <?php echo $choiceItem['class'];?>">
+							<div class="choiceItemGraphic"></div>
+							<h3 class="choiceItemHeader header--medium"><?php echo $choiceItem['header'];?></h3>
+							<h4 class="choiceItemTitle header--slim"><?php echo $choiceItem['title'];?></h4>
+							<p class="choiceItemBody body--normal"><?php echo $choiceItem['body'];?></p>
+							<div class="choiceItemCTA">
+								<span class="choiceItemCTALabel body--normal"><?php echo $choiceItem['cta'];?></span>
+								<button class="choiceItemCTAButton round-button plus"><span class="icon"></span></button>
 							</div>
-						<?php endif; ?>
-					</div>
-				<?php } ?>
+							<?php if(isset($choiceItem['feature_a'])):?>
+								<div class="choiceItemFeatures">
+									<div class="choiceItemFeature">
+										<div class="choiceItemFeatureGraphic"></div>
+										<p class="choiceItemFeatureLabel header--medium"><?php echo $choiceItem['feature_a'];?></p>
+									</div>
+									<div class="choiceItemFeature">
+										<div class="choiceItemFeatureGraphic"></div>
+										<p class="choiceItemFeatureLabel header--medium"><?php echo $choiceItem['feature_b'];?></p>
+									</div>
+								</div>
+							<?php endif; ?>
+						</div>
+					<?php } ?>
+				</div>
+				<div id="choice-vertuo" class="choiceContainer vertuo">
+					<span class="choice--label choiceGraphicText vertuo inner">V<br>e<br>r<br>t<br>u<br>o</span>
+					<?php foreach ($choice['vertuo'] as $choiceItem) { ?>
+						<div class="choiceItem <?php echo $choiceItem['class'];?>">
+							<div class="choiceItemGraphic"></div>
+							<h3 class="choiceItemHeader header--medium"><?php echo $choiceItem['header'];?></h3>
+							<h4 class="choiceItemTitle header--slim"><?php echo $choiceItem['title'];?></h4>
+							<p class="choiceItemBody body--normal"><?php echo $choiceItem['body'];?></p>
+							<div class="choiceItemCTA">
+								<span class="choiceItemCTALabel body--normal"><?php echo $choiceItem['cta'];?></span>
+								<button class="choiceItemCTAButton round-button plus"><span class="icon"></span></button>
+							</div>
+							<?php if(isset($choiceItem['feature_a'])):?>
+								<div class="choiceItemFeatures">
+									<div class="choiceItemFeature">
+										<div class="choiceItemFeatureGraphic"></div>
+										<p class="choiceItemFeatureLabel header--medium"><?php echo $choiceItem['feature_a'];?></p>
+									</div>
+									<div class="choiceItemFeature">
+										<div class="choiceItemFeatureGraphic"></div>
+										<p class="choiceItemFeatureLabel header--medium"><?php echo $choiceItem['feature_b'];?></p>
+									</div>
+								</div>
+							<?php endif; ?>
+						</div>
+					<?php } ?>
+				</div>
 			</div>
 		</div>
 	</section>
 	<section class="services">
-		<h2 class="servicesTitle header--main"><?php echo $services['title'];?></h2>
-		<ul class="servicesItems">
-			<?php foreach ($services['items'] as $item) { ?>
-				<li class="servicesItem">
-					<div class="servicesItemGraphic"></div>
-					<p class="servicesItemLabel list--label"><?php echo $item['label'];?></p>
-				</li>
-			<?php } ?>
-		</ul>
-		<div class="servicesContent">
-			<div class="servicesGraphic">
-				<div class="servicesGraphicContent"></div>
-			</div>
-			<div class="servicesText">
-				<h3 class="servicesTextHeader header--medium"><?php echo $services['header'];?></h3>
-				<h4 class="servicesTextTitle header--slim"><?php echo $services['callout_title'];?></h4>
-				<h4 class="servicesTextBody body--normal"><?php echo $services['body'];?></h4>
+		<div class="constraint-wrapper">
+			<h2 class="servicesTitle header--main"><?php echo $services['title'];?></h2>
+			<ul class="servicesItems">
+				<?php foreach ($services['items'] as $item) { ?>
+					<li class="servicesItem">
+						<div class="servicesItemGraphic"></div>
+						<p class="servicesItemLabel list--label"><?php echo $item['label'];?></p>
+					</li>
+				<?php } ?>
+			</ul>
+			<div class="servicesContent">
+				<div class="servicesGraphic">
+					<div class="servicesGraphicContent"></div>
+				</div>
+				<div class="servicesText">
+					<h3 class="servicesTextHeader header--medium"><?php echo $services['header'];?></h3>
+					<h4 class="servicesTextTitle header--slim"><?php echo $services['callout_title'];?></h4>
+					<h4 class="servicesTextBody body--normal"><?php echo $services['body'];?></h4>
+				</div>
 			</div>
 		</div>
 	</section>
 	<section class="expertise">
-		<h2 class="expertiseTitle header--main"><?php echo $expertise['title'];?></h2>
-		<div class="expertiseSpacer"></div>
-		<div class="expertiseItems">
-			<?php foreach ($expertise['items'] as $item) { ?>
-				<div class="expertiseItem <?php echo $item['id'];?>">
-					<div class="expertiseItemGraphic"></div>
-					<h3 class="expertiseItemHeader header--medium"><?php echo $item['header'];?></h3>
-					<p class="expertiseItemBody body--normal small"><?php echo $item['body'];?></p>
-				</div>
-			<?php } ?>
+		<div class="constraint-wrapper">
+			<h2 class="expertiseTitle header--main"><?php echo $expertise['title'];?></h2>
+			<div class="expertiseSpacer"></div>
+			<div class="expertiseItems">
+				<?php foreach ($expertise['items'] as $item) { ?>
+					<div class="expertiseItem <?php echo $item['id'];?>">
+						<div class="expertiseItemGraphic"></div>
+						<h3 class="expertiseItemHeader header--medium"><?php echo $item['header'];?></h3>
+						<p class="expertiseItemBody body--normal small"><?php echo $item['body'];?></p>
+					</div>
+				<?php } ?>
+			</div>
+			<a href="<?php echo $expertise['cta_link'];?>" class="expertiseCTA block-button transparent"><span class="label button--label"><?php echo $expertise['cta'];?></span></a>
+			<div class="expertiseBackground"></div>
 		</div>
-		<a href="<?php echo $expertise['cta_link'];?>" class="expertiseCTA block-button transparent"><span class="label button--label"><?php echo $expertise['cta'];?></span></a>
-		<div class="expertiseBackground"></div>
 	</section>
 	<section class="member">
-		<h2 class="memberHeader header--medium"><?php echo $member['header'];?></h2>
-		<h3 class="memberTitle header--main"><?php echo $member['title'];?></h3>
-		<div class="memberGraphic"></div>
-		<h4 class="memberCallout header--slim"><?php echo $member['callout'];?></h4>
-		<p class="memberBody body--normal"><?php echo $member['body'];?></p>
-		<a class="memberCTA block-button" href="<?php echo $member['cta_link'];?>"><span class="label button--label"><?php echo $member['cta'];?></span></a>
+		<div class="constraint-wrapper">
+			<h2 class="memberHeader header--medium"><?php echo $member['header'];?></h2>
+			<h3 class="memberTitle header--main"><?php echo $member['title'];?></h3>
+			<div class="memberGraphic"></div>
+			<h4 class="memberCallout header--slim"><?php echo $member['callout'];?></h4>
+			<p class="memberBody body--normal"><?php echo $member['body'];?></p>
+			<a class="memberCTA block-button" href="<?php echo $member['cta_link'];?>"><span class="label button--label"><?php echo $member['cta'];?></span></a>
+		</div>
 	</section>
 </div>
 

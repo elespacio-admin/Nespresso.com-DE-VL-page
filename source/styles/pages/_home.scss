@@ -1,5 +1,11 @@
 #{$projectSelector} {
 	
+	.constraint-wrapper {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1400px;
+	}
+
 	section {
 		position: relative;
 		text-align: center;
@@ -20,6 +26,11 @@
 		@include min-screen($BREAKPOINT_MEDIUM){
 			height: calc(100vh - #{$HEADER_SIZE_W});
 			background: #ebe5df url(#{$url_prefix}/assets/images/intro-W.jpg) center 75%;
+			background-size: cover;
+		}
+
+		@include min-screen($BREAKPOINT_MEDIUM){
+			background: #ebe5df url(#{$url_prefix}/assets/images/intro-XW.jpg) center 75%;
 			background-size: cover;
 		}
 
@@ -208,39 +219,15 @@
 				display: block;
 			}
 
-			&GraphicText {
-				position: absolute;
-				display: none;
-				user-select: none;
-				pointer-events: none;
-				@include min-screen($BREAKPOINT_NARROW){
-					display: block;
-					top: 110px;
-				}
-
-				@include min-screen($BREAKPOINT_MEDIUM){
-					top: -10px;
-				}
-
-				&.original {
-					color: $WHITE;
-					left: -29px;
-					opacity: 0.1;
-				}
-
-				&.vertuo {
-					color: $BLACK;
-					right: -29px;
-					opacity: 0.15;	
-				}
-			}
-
 			&.original {
 				color: $WHITE;
 				background-color: $BLACK;
 				@include min-screen($BREAKPOINT_MEDIUM){
 					background-color: transparent;
 					padding-left: 4.5%;
+				}
+				@include min-screen($BREAKPOINT_WIDE){
+					padding-left: 0;
 				}
 			}
 			&.vertuo {
@@ -249,6 +236,9 @@
 				@include min-screen($BREAKPOINT_MEDIUM){
 					background-color: transparent;
 					padding-right: 4.5%;
+				}
+				@include min-screen($BREAKPOINT_WIDE){
+					padding-right: 0;
 				}
 			}
 		}
@@ -266,6 +256,11 @@
 				@include min-screen($BREAKPOINT_NARROW) {
 					width: percentage(7/12);
 					max-width: 460px;
+				}
+
+				@include min-screen($BREAKPOINT_MEDIUM) {
+					width: percentage(4/6);
+					max-width: none;
 				}
 			}
 			&Graphic {
@@ -330,6 +325,56 @@
 				}
 				&Label {
 					margin-top: 15px;
+				}
+			}
+		}
+
+		&GraphicTexts {
+			position: relative;
+			width: 100%;
+			z-index: 1;
+		}
+
+		&GraphicText {
+			position: absolute;
+			display: none;
+			user-select: none;
+			pointer-events: none;
+			@include min-screen($BREAKPOINT_NARROW){
+				display: block;
+				top: 110px;
+			}
+
+			@include min-screen($BREAKPOINT_MEDIUM){
+				top: -10px;
+			}
+
+			&.original {
+				color: $WHITE;
+				left: -29px;
+				opacity: 0.1;
+			}
+
+			&.vertuo {
+				color: $BLACK;
+				right: -29px;
+				opacity: 0.15;	
+			}
+
+			&.inner {
+				@include min-screen($BREAKPOINT_NARROW){
+					display: block;
+				}
+
+				@include min-screen($BREAKPOINT_MEDIUM){
+					display: none;
+				}
+			}
+
+			&.outer {
+
+				@include min-screen($BREAKPOINT_MEDIUM){
+					display: block;
 				}
 			}
 		}
@@ -588,18 +633,17 @@
 				background: transparent url(#{$url_prefix}/assets/images/expertise-W.jpg) center 10%;
 				background-size: cover;
 			}
+
+			@include min-screen($BREAKPOINT_WIDE){
+				background: transparent url(#{$url_prefix}/assets/images/expertise-XW.jpg) center 10%;
+				background-size: cover;
+			}
 		}
 	}
 
 	.member {
 		color: $BLACK;
 		background-color: $WHITE;
-		
-		> * {
-			width: percentage(11/12);
-			margin-left: auto;
-			margin-right: auto;
-		}
 
 		padding-top: 41px;
 		padding-bottom: 53px;
@@ -614,6 +658,9 @@
 		}
 
 		&Header {
+			width: percentage(11/12);
+			margin-left: auto;
+			margin-right: auto;
 			margin-bottom: 23px;
 			@include min-screen($BREAKPOINT_NARROW){
 				margin-bottom: 40px;
@@ -624,6 +671,10 @@
 		}
 
 		&Title {
+			width: percentage(11/12);
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
 			margin-bottom: 37px;
 			@include min-screen($BREAKPOINT_NARROW){
 				margin-bottom: 32px;
@@ -646,6 +697,9 @@
 		}
 
 		&Callout {
+			width: percentage(11/12);
+			margin-left: auto;
+			margin-right: auto;
 			margin-bottom: 7px;
 			@include min-screen($BREAKPOINT_NARROW){
 				margin-bottom: 21px;
@@ -656,6 +710,9 @@
 		}
 
 		&Body {
+			width: percentage(11/12);
+			margin-left: auto;
+			margin-right: auto;
 			margin-bottom: 28px;
 			@include min-screen($BREAKPOINT_NARROW){
 				margin-bottom: 38px;
