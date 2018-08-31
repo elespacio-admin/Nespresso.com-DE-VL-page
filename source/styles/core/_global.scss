@@ -110,7 +110,7 @@
   br.not-wide {
     display: inline;
 
-    @include min-screen($BREAKPOINT_NARROW) {
+    @include min-screen($BREAKPOINT_MEDIUM) {
 
       display: none;
     }

@@ -113,6 +113,14 @@
 		<a href="<?php echo $expertise['cta_link'];?>" class="expertiseCTA block-button transparent"><span class="label button--label"><?php echo $expertise['cta'];?></span></a>
 		<div class="expertiseBackground"></div>
 	</section>
+	<section class="member">
+		<h2 class="memberHeader header--medium"><?php echo $member['header'];?></h2>
+		<h3 class="memberTitle header--main"><?php echo $member['title'];?></h3>
+		<div class="memberGraphic"></div>
+		<h4 class="memberCallout header--slim"><?php echo $member['callout'];?></h4>
+		<p class="memberBody body--normal"><?php echo $member['body'];?></p>
+		<a class="memberCTA block-button" href="<?php echo $member['cta_link'];?>"><span class="label button--label"><?php echo $member['cta'];?></span></a>
+	</section>
 </div>
 
 

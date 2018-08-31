@@ -129,10 +129,10 @@
       "cta_link": "#sustainability-missing-link"
     },
     "member": {
-      "header": "Become a <em>Nespresso</em> club member",
+      "header": "Become a<br class=\"not-wide\"> <em>Nespresso</em> club member",
       "title": "enjoy the welcome offer for original &amp; vertuo",
       "callout": "get an exclusive gift",
-      "body": "By buying a pre-selected<br>coffee assortment",
+      "body": "By buying a pre-selected<br class=\"narrow\"><br class=\"wide\"> coffee assortment",
       "cta":"Become a member",
       "cta_link": "#member-missing-link"
     }

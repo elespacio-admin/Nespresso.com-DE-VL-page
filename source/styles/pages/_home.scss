@@ -270,7 +270,7 @@
 			}
 			&Graphic {
 				height: 200px;
-				background-color: rgba(#666, 0.25);
+				background-color: rgba(#888, 0.25);
 			}
 			&Header {
 				padding: 15px 0 5px 0;
@@ -326,7 +326,7 @@
 					display: inline-block;
 					width: 72px;
 					height: 72px;
-					background-color: rgba(#666, 0.25);
+					background-color: rgba(#888, 0.25);
 				}
 				&Label {
 					margin-top: 15px;
@@ -383,7 +383,7 @@
 				margin: 0 auto;
 				width: 58px;
 				height: 48px;
-				background-color: rgba(#666, 0.25);
+				background-color: rgba(#888, 0.25);
 			}
 
 			&Label {
@@ -419,7 +419,7 @@
     	&Content {
     		@include aspect-ratio(431, 307);
     		width: 100%;
-				background-color: rgba(#666, 0.25);
+				background-color: rgba(#888, 0.25);
 				@include min-screen($BREAKPOINT_MEDIUM){
 					width: 95%;
 				}
@@ -528,7 +528,7 @@
 
 			&Graphic {
 				@include aspect-ratio(40px, 40px);
-				background-color: rgba(#666, 0.25);
+				background-color: rgba(#888, 0.25);
 				width: 40px;
 				margin-bottom: 14px;
 			}
@@ -588,6 +588,85 @@
 				background: transparent url(#{$url_prefix}/assets/images/expertise-W.jpg) center 10%;
 				background-size: cover;
 			}
+		}
+	}
+
+	.member {
+		color: $BLACK;
+		background-color: $WHITE;
+		
+		> * {
+			width: percentage(11/12);
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		padding-top: 41px;
+		padding-bottom: 53px;
+
+		@include min-screen($BREAKPOINT_NARROW){
+			padding-top: 47px;
+			padding-bottom: 59px;	
+		}
+		@include min-screen($BREAKPOINT_MEDIUM){
+			padding-top: 95px;
+			padding-bottom: 79px;	
+		}
+
+		&Header {
+			margin-bottom: 23px;
+			@include min-screen($BREAKPOINT_NARROW){
+				margin-bottom: 40px;
+			}
+			@include min-screen($BREAKPOINT_MEDIUM){
+				margin-bottom: 9px;
+			}
+		}
+
+		&Title {
+			margin-bottom: 37px;
+			@include min-screen($BREAKPOINT_NARROW){
+				margin-bottom: 32px;
+			}
+			@include min-screen($BREAKPOINT_MEDIUM){
+				margin-bottom: 24px;	
+			}
+		}
+
+		&Graphic {
+			background-color: rgba(#888, 0.25);
+			@include aspect-ratio(235,154);
+			width: 235px;
+			margin: 0 auto -3px auto;
+			@include min-screen($BREAKPOINT_NARROW){
+				width: 302px;
+				margin-bottom: 0;
+			}
+			@include min-screen($BREAKPOINT_MEDIUM){}
+		}
+
+		&Callout {
+			margin-bottom: 7px;
+			@include min-screen($BREAKPOINT_NARROW){
+				margin-bottom: 21px;
+			}
+			@include min-screen($BREAKPOINT_MEDIUM){
+				margin-bottom: 18px;	
+			}
+		}
+
+		&Body {
+			margin-bottom: 28px;
+			@include min-screen($BREAKPOINT_NARROW){
+				margin-bottom: 38px;
+			}
+			@include min-screen($BREAKPOINT_MEDIUM){
+				margin-bottom: 55px;
+			}
+		}
+
+		&CTA {
+			width: auto;
 		}
 	}
 }
