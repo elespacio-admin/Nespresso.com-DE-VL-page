@@ -92,6 +92,7 @@
 	<section class="services">
 		<div class="constraint-wrapper">
 			<h2 class="servicesTitle header--main"><?php echo $services['title'];?></h2>
+			<div class="servicesItemsWrapper" data-component="ServicesComponent">
 			<ul class="servicesItems">
 				<?php foreach ($services['items'] as $item) { ?>
 					<li class="servicesItem">
@@ -101,6 +102,7 @@
 					</li>
 				<?php } ?>
 			</ul>
+			</div>
 			<div class="servicesContent">
 				<div class="servicesGraphic">
 					<div class="servicesGraphicContent">
