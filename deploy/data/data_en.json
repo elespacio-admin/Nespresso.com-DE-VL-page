@@ -33,7 +33,9 @@
           "body": "Choose from a wide range of <em><em>Nespresso</em></em> coffee capsules, each with its own distinct individual character and aroma. You can never have too much choice. No two <em><em>Nespresso</em></em> flavours are the same.",
           "cta": "Discover Original Coffee Range",
           "feature_a": "exceptional espresso variety",
+          "icon_a": "icon-capsule",
           "feature_b": "creamy and dense crema",
+          "icon_b": "icon-cup",
           "image": "choice-range-original.png",
           "alt": "Original range capsules"
         },
@@ -44,7 +46,9 @@
           "body": "For those of you who like espresso coffees, the technology in <em><em>Nespresso</em></em> Original machines uses a high-pressure extraction system to give you that fresh aroma from each <em><em>Nespresso</em></em> capsule.",
           "cta": "Discover Original Machine Range",
           "feature_a": "pressure extraction system",
+          "icon_a": "icon-machine",
           "feature_b": "espresso-based and milk recipes",
+          "icon_b": "icon-cappuccino",
           "image": "choice-machine-original.png",
           "alt": "Original range machine"
         },
@@ -66,7 +70,9 @@
           "body": "Vertuo coffee capsules come in all different shapes and sizes. 25 blends and five cup sizes to be exact.<br> Each blend is specially made for each size to indulge yourself, at any time of the day. ",
           "cta": "Discover Vertuo Coffee Range",
           "feature_a": "Fullbodied coffee pleasure in a big mug",
+          "icon_a": "icon-sizes",
           "feature_b": "Generous and smooth crema",
+          "icon_b": "icon-mug",
           "image": "choice-range-vertuo.png",
           "alt": "Vertuo range capsules"
         },
@@ -77,7 +83,9 @@
           "body": "For those of you who prefer a lager cup of coffee. The capsule spins up to 7,000 rotations per minute, blending ground coffee with water and producing the perfect crema to enjoy quality coffee in larger cup sizes.",
           "cta": "Discover Vertuo Machine Range",
           "feature_a": "Innovative coffee system",
+          "icon_a": "icon-hand",
           "feature_b": "Extraction by centrifusion&trade;",
+          "icon_b": "icon-arrows",
           "image": "choice-machine-vertuo.png",
           "alt": "Vertuo range machine"
         },
@@ -97,23 +105,28 @@
       "items": [
         { 
           "id": "internet",
-          "label": "order<br>by internet"
+          "label": "order<br>by internet",
+          "icon": "icon-o-internet"
         },
         {
           "id": "app",
-          "label": "order on<br>mobile app"
+          "label": "order on<br>mobile app",
+          "icon": "icon-o-app"
         },
         {
           "id": "phone",
-          "label": "order<br>by phone"
+          "label": "order<br>by phone",
+          "icon": "icon-o-phone"
         },
         {
           "id": "boutique",
-          "label": "order<br>in boutique"
+          "label": "order<br>in boutique",
+          "icon": "icon-o-boutique"
         },
         {
           "id": "easy",
-          "label": "easy<br>order"
+          "label": "easy<br>order",
+          "icon": "icon-o-easy"
         }
       ],
       "header": "Available all day",
@@ -127,17 +140,20 @@
         {
           "id": "quality",
           "header": "Uncompromising<br class=\"medium-only\"> quality",
-          "body": "From the bean to your cup, the <em>Nespresso</em> AAA Sustainable Quality Program is supporting 45,000 farmers worldwide to grow high quality coffee."
+          "body": "From the bean to your cup, the <em>Nespresso</em> AAA Sustainable Quality Program is supporting 45,000 farmers worldwide to grow high quality coffee.",
+          "icon": "icon-e-beans"
         },
         {
           "id": "coffee",
           "header": "Sustainable<br class=\"medium-only\"> coffee",
-          "body": "Get more out of your coffee with every cup of <em>Nespresso</em> knowing that we are committed to making a positive impact on the environment."
+          "body": "Get more out of your coffee with every cup of <em>Nespresso</em> knowing that we are committed to making a positive impact on the environment.",
+          "icon": "icon-e-leaf"
         },
         {
           "id": "freshness",
           "header": "Continued<br class=\"medium-only\"> freshness",
-          "body": "The rich coffee flavours are protected from the outside by the recyclable aluminium capsules, while aromas are preserved on the inside."
+          "body": "The rich coffee flavours are protected from the outside by the recyclable aluminium capsules, while aromas are preserved on the inside.",
+          "icon": "icon-e-cup"
         }
       ],
       "cta": "Discover our sustainability vision",

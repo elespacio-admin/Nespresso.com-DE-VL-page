@@ -474,9 +474,9 @@
 				width: 135px;
 			}
 			&Graphic {
+				@include aspect-ratio(96, 106);
 				margin: 0 auto;
 				width: 58px;
-				height: 48px;
 				background-color: rgba(#888, 0.25);
 			}
 
@@ -626,7 +626,6 @@
 
 			&Graphic {
 				@include aspect-ratio(40px, 40px);
-				background-color: rgba(#888, 0.25);
 				width: 40px;
 				margin-bottom: 14px;
 			}
@@ -781,6 +780,77 @@
 
 		&CTA {
 			width: auto;
+		}
+	}
+
+	.sprite {
+		background: url(#{$url_prefix}/assets/images/icons-sprite.png);
+		background-repeat: no-repeat;
+
+		$spriteW: 2180;
+		$spriteH: 152;
+		
+		//choice
+		&.icon-capsule {
+			@include responsive-sprite($spriteW,$spriteH, 308, 4, 144, 144);
+		}
+		&.icon-cup {
+			@include responsive-sprite($spriteW,$spriteH, 460, 4, 144, 144);
+		}
+		&.icon-machine {
+			@include responsive-sprite($spriteW,$spriteH, 1208, 4, 144, 144);
+		}
+		&.icon-cappuccino {
+			@include responsive-sprite($spriteW,$spriteH, 156, 4, 144, 144);
+		}
+		&.icon-sizes {
+			@include responsive-sprite($spriteW,$spriteH, 2032, 4, 144, 144);
+		}
+		&.icon-mug {
+			@include responsive-sprite($spriteW,$spriteH, 1360, 4, 144, 144);
+		}
+		&.icon-hand {
+			@include responsive-sprite($spriteW,$spriteH, 1056, 4, 144, 144);
+		}
+		&.icon-arrows {
+			@include responsive-sprite($spriteW,$spriteH, 4, 4, 144, 144);
+		}
+
+		//services
+		&.icon-o-internet {
+			@include responsive-sprite($spriteW,$spriteH, 1824, 4, 96, 106);	
+		}
+		&.icon-o-app {
+			@include responsive-sprite($spriteW,$spriteH, 1512, 4, 96, 106);	
+		}
+		&.icon-o-phone {
+			@include responsive-sprite($spriteW,$spriteH, 1928, 4, 96, 106);	
+		}
+		&.icon-o-boutique {
+			@include responsive-sprite($spriteW,$spriteH, 1616, 4, 96, 106);	
+		}
+		&.icon-o-easy {
+			@include responsive-sprite($spriteW,$spriteH, 1720, 4, 96, 106);	
+		}
+
+		//expertise
+		&.icon-e-beans {
+			@include responsive-sprite($spriteW,$spriteH, 612, 4, 66, 68);
+			@include min-screen($BREAKPOINT_NARROW) {
+				@include responsive-sprite($spriteW,$spriteH, 686, 4, 66, 68);
+			}
+		}
+		&.icon-e-leaf {
+			@include responsive-sprite($spriteW,$spriteH, 908, 4, 66, 68);	
+			@include min-screen($BREAKPOINT_NARROW) {
+				@include responsive-sprite($spriteW,$spriteH, 982, 4, 66, 68);
+			}
+		}
+		&.icon-e-cup {
+			@include responsive-sprite($spriteW,$spriteH, 760, 4, 66, 68);	
+			@include min-screen($BREAKPOINT_NARROW) {
+				@include responsive-sprite($spriteW,$spriteH, 834, 4, 66, 68);
+			}
 		}
 	}
 }

@@ -59,6 +59,34 @@
   @include retina;
 }
 
+@mixin place-asset($x, $y, $w, $h, $containerW, $containerH) {
+
+  position: absolute;
+  top: $y/$containerH * 100%;
+  left: $x/$containerW * 100%;
+  width: $w/$containerW * 100%;
+  height: $h/$containerH * 100%;
+}
+
+@mixin place-responsive-asset($x, $y, $w, $containerW, $containerH) {
+
+  position: absolute;
+  top: $y/$containerH * 100%;
+  left: $x/$containerW * 100%;
+  width: $w/$containerW * 100%;
+}
+
+@mixin responsive-sprite($spriteWidth, $spriteHeight, $imgX, $imgY, $imgWidth, $imgHeight) {
+  background-size: percentage($spriteWidth/$imgWidth) percentage($spriteHeight/$imgHeight);
+  background-position: percentage($imgX/($spriteWidth - $imgWidth)) percentage($imgY/($spriteHeight - $imgHeight));
+}
+
+@mixin stitches-sprite($x: 0, $y: 0, $width: 0, $height: 0) {
+  background-position: $x $y;
+  width: $width;
+  height: $height;
+}
+
 //============================================================
 //
 // Add retina version of the spritesheet

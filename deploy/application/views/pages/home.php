@@ -45,11 +45,11 @@
 							<?php if(isset($choiceItem['feature_a'])):?>
 								<div class="choiceItemFeatures">
 									<div class="choiceItemFeature">
-										<div class="choiceItemFeatureGraphic"></div>
+										<div class="choiceItemFeatureGraphic sprite <?php echo $choiceItem['icon_a'];?>"></div>
 										<p class="choiceItemFeatureLabel header--medium"><?php echo $choiceItem['feature_a'];?></p>
 									</div>
 									<div class="choiceItemFeature">
-										<div class="choiceItemFeatureGraphic"></div>
+										<div class="choiceItemFeatureGraphic sprite <?php echo $choiceItem['icon_b'];?>"></div>
 										<p class="choiceItemFeatureLabel header--medium"><?php echo $choiceItem['feature_b'];?></p>
 									</div>
 								</div>
@@ -74,11 +74,11 @@
 							<?php if(isset($choiceItem['feature_a'])):?>
 								<div class="choiceItemFeatures">
 									<div class="choiceItemFeature">
-										<div class="choiceItemFeatureGraphic"></div>
+										<div class="choiceItemFeatureGraphic sprite <?php echo $choiceItem['icon_a'];?>"></div>
 										<p class="choiceItemFeatureLabel header--medium"><?php echo $choiceItem['feature_a'];?></p>
 									</div>
 									<div class="choiceItemFeature">
-										<div class="choiceItemFeatureGraphic"></div>
+										<div class="choiceItemFeatureGraphic sprite <?php echo $choiceItem['icon_b'];?>"></div>
 										<p class="choiceItemFeatureLabel header--medium"><?php echo $choiceItem['feature_b'];?></p>
 									</div>
 								</div>
@@ -95,7 +95,7 @@
 			<ul class="servicesItems">
 				<?php foreach ($services['items'] as $item) { ?>
 					<li class="servicesItem">
-						<div class="servicesItemGraphic">
+						<div class="servicesItemGraphic sprite <?php echo $item['icon'];?>">
 						</div>
 						<p class="servicesItemLabel list--label"><?php echo $item['label'];?></p>
 					</li>
@@ -121,8 +121,8 @@
 			<div class="expertiseSpacer"></div>
 			<div class="expertiseItems">
 				<?php foreach ($expertise['items'] as $item) { ?>
-					<div class="expertiseItem <?php echo $item['id'];?>">
-						<div class="expertiseItemGraphic"></div>
+					<div class="expertiseItem">
+						<div class="expertiseItemGraphic sprite <?php echo $item['icon'];?>"></div>
 						<h3 class="expertiseItemHeader header--medium"><?php echo $item['header'];?></h3>
 						<p class="expertiseItemBody body--normal small"><?php echo $item['body'];?></p>
 					</div>
