@@ -9,23 +9,26 @@ site.views.Page = el.core.utils.class.extend(function(options){
 
   $.extend(this.options, options);
 
-
   this.name = 'PageView';
   this.id = el.core.utils.uniqueId.get(this.name + '-');
 
   this.$el = this.options.$el;
 
   this.$body = $('body');
-  this.$mainContent = this.$body.find('#main-content');
-  this.$footer = this.$body.find('footer');
 
   el.core.events.globalDispatcher.on(el.core.events.event.RESIZE, $.proxy(this._resizeHandler, this));
+
+  // temp
+  // this.$el.find('.overlay.range').addClass('is-active');
+  // end temp
 
 }, el.core.events.EventsDispatcher);
 
 site.views.Page.prototype.init = function(e) {
 
   this.initPage();
+
+  this.$body.find('.nvertuo2018 .choiceItemCTAButton').on('click', $.proxy(this._onChoiceItemCTAClick, this));
 
   return this;
 }
@@ -47,6 +50,11 @@ site.views.Page.prototype.initPage = function() {
 
   el.core.managers.layoutManager.init();
   el.core.managers.layoutManager.resize();
+}
+
+site.views.Page.prototype._onChoiceItemCTAClick = function(e) {
+  var $target = $(e.currentTarget);
+  el.core.events.globalDispatcher.emit(site.events.event.OVERLAY_SHOW_REQUEST, {'id':$target.data('id')});
 }
 
 site.views.Page.prototype.resize = function(size) {

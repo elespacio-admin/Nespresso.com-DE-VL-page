@@ -87,6 +87,21 @@
 		&.big {
 			width: 64px;
 			height: 64px;
+			
+			.icon {
+				&:before {
+					width: 20px;
+				}
+				&:after {
+					height: 20px;
+				}
+				&:before {
+					@include absoluteTL(-1px, -10px);	
+				}
+				&:after {
+					@include absoluteTL(-10px, -1px);	
+				}
+			}
 		}
 	}
 }

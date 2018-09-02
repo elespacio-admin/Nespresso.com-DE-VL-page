@@ -45,10 +45,10 @@
 					<div class="code body-normal">{block-button.transparent}</div>
 					<a href="#" class="block-button transparent dark" data-label="block-button"><span class="label button--label">block-button transparent</span></a>
 					<div class="code body-normal">{block-button.dark}</div>
-					<button class="round-button plus"><span class="icon"></span></button>
+					<button class="round-button plus"><i class="icon" aria-hidden></i></button>
 					<div class="code body-normal">{round-button.plus}</div>
 
-					<button class="round-button close big"><span class="icon"></span></button>
+					<button class="round-button close big"><i class="icon" aria-hidden></i></button>
 					<div class="code body-normal">{round-button.close.big}</div>
 			</div>
 		</section>

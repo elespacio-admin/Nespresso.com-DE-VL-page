@@ -4,6 +4,10 @@
     "base_url": "http://local.nvertuo.com"
   },
   "home": {
+    "generic":{
+      "close": "close",
+      "more": "more"
+    },
     "header" : {
       "title" : "Nespresso | Original & Vertuo",
       "og_title" : "Nespresso | Original & Vertuo",
@@ -29,7 +33,7 @@
         {
           "class": "range",
           "header": "original range",
-          "title": "The highest<br> coffee quality",
+          "title": "The highest<br> coffee&nbsp;quality",
           "body": "Choose from a wide range of <em><em>Nespresso</em></em> coffee capsules, each with its own distinct individual character and aroma. You can never have too much choice. No two <em><em>Nespresso</em></em> flavours are the same.",
           "cta": "Discover Original Coffee Range",
           "feature_a": "exceptional espresso variety",
@@ -37,7 +41,42 @@
           "feature_b": "creamy and dense crema",
           "icon_b": "icon-cup",
           "image": "choice-range-original.png",
-          "alt": "Original range capsules"
+          "alt": "Original range capsules",
+          "overlay_items": [
+            {
+              "image": "some-image.jpg",
+              "name": "Intenso",
+              "description": "The ultimate Neapolitan cups",
+              "size": "w33"
+            },{
+              "image": "some-image.jpg",
+              "name": "Espresso",
+              "description": "Traditional is best",
+              "size": "w33"
+            },{
+              "image": "some-image.jpg",
+              "name": "Master&nbsp;origin",
+              "description": "A single origin’s striking cup",
+              "size": "w33"
+            },{
+              "image": "some-image.jpg",
+              "name": "Lungo",
+              "description": "Extend the pleasure of an Espresso",
+              "size": "w33"
+            },{
+              "image": "some-image.jpg",
+              "name": "Decaffeinato",
+              "description": "Same character without caffeine",
+              "size": "w33"
+            },{
+              "image": "some-image.jpg",
+              "name": "Variations",
+              "description": "A flavoured gourmandise",
+              "size": "w33"
+            }
+          ],
+          "overlay_cta": "Discover the original range",
+          "overlay_cta_link": "#missing-link"
         },
         {
           "class": "machine",
@@ -50,7 +89,27 @@
           "feature_b": "espresso-based and milk recipes",
           "icon_b": "icon-cappuccino",
           "image": "choice-machine-original.png",
-          "alt": "Original range machine"
+          "alt": "Original range machine",
+          "overlay_items": [
+            {
+              "image": "some-image.jpg",
+              "name": "Espressos",
+              "description": "The Original line for the Espresso lovers",
+              "size": "w50"
+            },{
+              "image": "some-image.jpg",
+              "name": "Personalised espressos",
+              "description": "Fancy yourself as a coffee expert? Get connected with the Nespresso Expert and Prodigio, or count on the KitchenAid companion.",
+              "size": "w50"
+            },{
+              "image": "some-image.jpg",
+              "name": "Milk and latte machines",
+              "description": "Use the versatile level of settings to create a variety of coffee and milk recipes using barista-like customisation or one-touch systems.",
+              "size": "w100"
+            }
+          ],
+          "overlay_cta": "Discover the original machines",
+          "overlay_cta_link": "#missing-link"
         },
         {
           "class": "accessories",
@@ -59,7 +118,48 @@
           "body": "Refine your moments of enjoyment with our accessory collections - the perfect combination of form and function.<br> Cups and glasses for every coffee specialty as well as capsule dispensers for the perfect storage of your favorite coffees.",
           "cta": "Discover Original Accessories",
           "image": "choice-accessories-original.png",
-          "alt": "Original accessories"
+          "alt": "Original accessories",
+          "overlay_items": [
+            {
+              "image": "some-image.jpg",
+              "name": "view<br>collection",
+              "size": "w25"
+            },{
+              "image": "some-image.jpg",
+              "name": "pixie collection",
+              "size": "w25"
+            },{
+              "image": "some-image.jpg",
+              "name": "pure collection",
+              "size": "w25"
+            },{
+              "image": "some-image.jpg",
+              "name": "touch<br>collection",
+              "size": "w25"
+            },{
+              "image": "some-image.jpg",
+              "name": "reveal<br>collection",
+              "size": "w20"
+            },{
+              "image": "some-image.jpg",
+              "name": "aeroccino3",
+              "size": "w20"
+            },{
+              "image": "some-image.jpg",
+              "name": "aeroccino4",
+              "size": "w20"
+            },{
+              "image": "some-image.jpg",
+              "name": "delicacies",
+              "size": "w20"
+            },{
+              "image": "some-image.jpg",
+              "name": "gift card",
+              "size": "w20"
+            }
+          ],
+          "overlay_cta": "Discover the original accesories",
+          "overlay_cta_link": "#missing-link"
         }
       ],
       "vertuo": [
@@ -74,7 +174,42 @@
           "feature_b": "Generous and smooth crema",
           "icon_b": "icon-mug",
           "image": "choice-range-vertuo.png",
-          "alt": "Vertuo range capsules"
+          "alt": "Vertuo range capsules",
+          "overlay_items": [
+            {
+              "image": "some-image.jpg",
+              "name": "Alto",
+              "description": "Get going with the largest cup size",
+              "size": "w33"
+            },{
+              "image": "some-image.jpg",
+              "name": "Master Origin",
+              "description": "A single origin’s striking cup",
+              "size": "w33"
+            },{
+              "image": "some-image.jpg",
+              "name": "MUG",
+              "description": "Coffee for a longer experience",
+              "size": "w33"
+            },{
+              "image": "some-image.jpg",
+              "name": "Gran Lungo",
+              "description": "Extend the pleasure of an Espresso",
+              "size": "w33"
+            },{
+              "image": "some-image.jpg",
+              "name": "Double espresso",
+              "description": "Twice your Espresso",
+              "size": "w33"
+            },{
+              "image": "some-image.jpg",
+              "name": "Espresso",
+              "description": "Traditional is best",
+              "size": "w33"
+            }
+          ],
+          "overlay_cta": "DISCOVER THE VERTUO RANGE",
+          "overlay_cta_link": "#missing-link"
         },
         {
           "class": "machine",
@@ -87,7 +222,17 @@
           "feature_b": "Extraction by centrifusion&trade;",
           "icon_b": "icon-arrows",
           "image": "choice-machine-vertuo.png",
-          "alt": "Vertuo range machine"
+          "alt": "Vertuo range machine",
+          "overlay_items": [
+            {
+              "image": "some-image.jpg",
+              "name": "Your full range of coffee styles",
+              "description": "A wide variety of coffees in various styles, all at the touch of a button. Coffee redefined",
+              "size": "w100"
+            }
+          ],
+          "overlay_cta": "Discover the vertuo machines",
+          "overlay_cta_link": "#missing-link"
         },
         {
           "class": "accessories",
@@ -96,7 +241,41 @@
           "body": "Designer Konstantin Grcic combined the senses of taste, smell and sight to create a variety of accessories made for a wide range of <em>Nespresso</em> Vertuo coffee experiences.<br>Time to get inspired!",
           "cta": "Discover Vertuo Accessories",
           "image": "choice-accessories-vertuo.png",
-          "alt": "Vertuo accessories"
+          "alt": "Vertuo accessories",
+          "overlay_items": [
+            {
+              "image": "some-image.jpg",
+              "name": "Vertuo<br>espresso cups",
+              "size": "w33"
+            },
+            {
+              "image": "some-image.jpg",
+              "name": "Vertuo<br>gran lungo cups",
+              "size": "w33"
+            },
+            {
+              "image": "some-image.jpg",
+              "name": "Vertuo<br>coffee mugs",
+              "size": "w33"
+            },
+            {
+              "image": "some-image.jpg",
+              "name": "Vertuo spoon",
+              "size": "w33"
+            },
+            {
+              "image": "some-image.jpg",
+              "name": "Vertuo alto<br>travel mug",
+              "size": "w33"
+            },
+            {
+              "image": "some-image.jpg",
+              "name": "Vertuo<br>travel mug",
+              "size": "w33"
+            }
+          ],
+          "overlay_cta": "Discover the vertuo accesories",
+          "overlay_cta_link": "#missing-link"
         }
       ]
     },

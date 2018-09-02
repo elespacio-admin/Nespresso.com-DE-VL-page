@@ -18,6 +18,7 @@
 // @codekit-prepend "site/components/base-component.js"
 // @codekit-prepend "site/components/tabs-component.js"
 // @codekit-prepend "site/components/services-component.js"
+// @codekit-prepend "site/components/overlay-component.js"
 
 // @codekit-prepend "site/views/page-view.js"
 

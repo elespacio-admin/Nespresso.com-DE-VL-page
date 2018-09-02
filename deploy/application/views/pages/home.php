@@ -27,7 +27,7 @@
 					<span class="choiceTabLabel header--medium"><?php echo $choice['vertuo_label'];?></span>
 				</button>
 			</div>
-			<div class="choiceOptions">
+		<div class="choiceOptions">
 				<div id="choice-original" class="choiceContainer original is-visible">
 					<span class="choice--label choiceGraphicText original inner">O<br>r<br>i<br>g<br>i<br>n<br>a<br>l</span>
 					<?php foreach ($choice['original'] as $choiceItem) { ?>
@@ -40,7 +40,7 @@
 							<p class="choiceItemBody body--normal"><?php echo $choiceItem['body'];?></p>
 							<div class="choiceItemCTA">
 								<span class="choiceItemCTALabel body--normal"><?php echo $choiceItem['cta'];?></span>
-								<button class="choiceItemCTAButton round-button plus"><span class="icon"></span></button>
+								<button class="choiceItemCTAButton round-button plus" data-id="original-<?php echo $choiceItem['class'];?>" aria-label="<?php echo $generic['more'];?>"><i class="icon" aria-hidden></i></button>
 							</div>
 							<?php if(isset($choiceItem['feature_a'])):?>
 								<div class="choiceItemFeatures">
@@ -54,6 +54,28 @@
 									</div>
 								</div>
 							<?php endif; ?>
+							<aside class="overlay <?php echo $choiceItem['class'];?>" role="dialog" aria-labelledby="dialogTitle" data-id="original-<?php echo $choiceItem['class'];?>" data-component="OverlayComponent">
+								<div class="overlayWrapper">
+									<button class="overlayClose round-button close big" aria-label="<?php echo $generic['close'];?>"><i class="icon"></i></button>
+									<div class="overlayContent">
+										<h5 id="dialogTitle" class="overlayHeader header--slim"><?php echo $choiceItem['header'];?></h5>
+										<ul class="overlayItems">
+											<?php if(isset($choiceItem['overlay_items'])):?>
+												<?php foreach ($choiceItem['overlay_items'] as $oItem) { ?>
+													<li class="overlayItem <?php echo $oItem['size'];?>">
+														<div class="overlayItemGraphic" data-image="<?php echo $settings['base_url'].'/assets/images/'.$oItem['image']?>"></div>
+														<h6 class="overlayItemName header--medium"><?php echo $oItem['name'];?></h6>
+														<?php if(isset($oItem['description'])): ?>
+															<p class="overlayItemDescription body--normal"><?php echo $oItem['description'];?></p>
+														<?php endif; ?>
+													</li>
+												<?php } ?>
+											<?php endif;?>
+										</ul>
+									</div>
+									<a href="<?php echo $choiceItem['overlay_cta_link'];?>" class="overlayCTA block-button"><span class="label button--label"><?php echo $choiceItem['overlay_cta'];?></span></a>
+								</div>
+							</aside>
 						</div>
 					<?php } ?>
 				</div>
@@ -69,7 +91,7 @@
 							<p class="choiceItemBody body--normal"><?php echo $choiceItem['body'];?></p>
 							<div class="choiceItemCTA">
 								<span class="choiceItemCTALabel body--normal"><?php echo $choiceItem['cta'];?></span>
-								<button class="choiceItemCTAButton round-button plus"><span class="icon"></span></button>
+								<button class="choiceItemCTAButton round-button plus" data-id="vertuo-<?php echo $choiceItem['class'];?>" aria-label="<?php echo $generic['more'];?>"><i class="icon" aria-hidden></i></button>
 							</div>
 							<?php if(isset($choiceItem['feature_a'])):?>
 								<div class="choiceItemFeatures">
@@ -84,6 +106,28 @@
 								</div>
 							<?php endif; ?>
 						</div>
+						<aside class="overlay <?php echo $choiceItem['class'];?>" role="dialog" aria-labelledby="dialogTitle" data-id="vertuo-<?php echo $choiceItem['class'];?>" data-component="OverlayComponent">
+								<div class="overlayWrapper">
+									<button class="overlayClose round-button close big" aria-label="<?php echo $generic['close'];?>"><i class="icon"></i></button>
+									<div class="overlayContent">
+										<h5 id="dialogTitle" class="overlayHeader header--slim"><?php echo $choiceItem['header'];?></h5>
+										<ul class="overlayItems">
+											<?php if(isset($choiceItem['overlay_items'])):?>
+												<?php foreach ($choiceItem['overlay_items'] as $oItem) { ?>
+													<li class="overlayItem <?php echo $oItem['size'];?>">
+														<div class="overlayItemGraphic" data-image="<?php echo $settings['base_url'].'/assets/images/'.$oItem['image']?>"></div>
+														<h6 class="overlayItemName header--medium"><?php echo $oItem['name'];?></h6>
+														<?php if(isset($oItem['description'])): ?>
+															<p class="overlayItemDescription body--normal"><?php echo $oItem['description'];?></p>
+														<?php endif; ?>
+													</li>
+												<?php } ?>
+											<?php endif;?>
+										</ul>
+									</div>
+									<a href="<?php echo $choiceItem['overlay_cta_link'];?>" class="overlayCTA block-button"><span class="label button--label"><?php echo $choiceItem['overlay_cta'];?></span></a>
+								</div>
+							</aside>
 					<?php } ?>
 				</div>
 			</div>
@@ -147,11 +191,3 @@
 		</div>
 	</section>
 </div>
-
-
-<?php //foreach ($intro_body as $body) { ?>
-	<!-- <p class="body-text__big"><?php //echo $body;?></p> -->
-<?php //} ?>
-<!-- <div class="portrait"> -->
-	<!--img src="<?php //echo $settings['base_url'];?>/assets/images/home/quote-author.png"-->
-<!-- </div> -->
