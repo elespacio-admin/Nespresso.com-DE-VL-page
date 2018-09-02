@@ -12,6 +12,7 @@
 
 // @codekit-prepend "core/managers/layout-manager.js"
 
+// @codekit-prepend "site/enums/breakpoint.js"
 // @codekit-prepend "site/events/event.js"
 
 // @codekit-prepend "site/components/base-component.js"

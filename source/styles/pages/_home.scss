@@ -446,7 +446,7 @@
 			max-width: 490px;
 			margin: 0 auto 43px auto;
 			@include min-screen($BREAKPOINT_NARROW){
-				margin-bottom: 63px;	
+				margin-bottom: 63px;
 			}
 			@include min-screen($BREAKPOINT_MEDIUM){
 				max-width: none;
@@ -454,21 +454,22 @@
 		}
 
 		&Items {
-			width: 100%;
+			width: percentage(12/11);
+			margin-left: - percentage(0.5/11);
 			height: 120px;
 			margin-bottom: 38px;
 			@include min-screen($BREAKPOINT_NARROW){
+				width: 100%;
+				margin-left: 0;
 				display: flex;
 				justify-content: space-between;
 				margin-bottom: 76px;
 			}
 		}
 		&Item {
-			display: none;
-			width: 100%;
-			&:first-child {
-				display: block;
-			}
+			outline: none;
+			border: none;
+			width: 50%;
 			@include min-screen($BREAKPOINT_NARROW){
 				display: block;
 				width: 135px;
@@ -492,7 +493,7 @@
 		&Content {
 			@include min-screen($BREAKPOINT_MEDIUM){
 				display: flex;
-				flex-direction: row-reverse;
+				flex-direction: row-reverse2;
 				justify-content: space-between;
 			}
 		}
@@ -554,6 +555,65 @@
 			}
 			&Title {
 				padding-bottom: 18px;
+			}
+		}
+		// slick
+		.slick-arrow {
+			z-index: 2;
+			color: transparent;
+			position: absolute;
+			top: 35px - 32px/2;
+			width: 32px;
+			height: 32px;
+			&.slick-disabled {
+				opacity: 0.25;
+				cursor: default;
+			}
+			i {
+				display: block;
+				position: absolute;
+				top: 50%;
+				width: 12px;
+
+				&:before,
+				&:after {
+					content: "";
+					display: block;
+					width: 12px;
+					height: 2px;
+					position: absolute;
+					top: -1px;
+					left: 0;
+					background-color: $WHITE;
+				}
+				&:before {
+					transform: rotate(-45deg);
+				}
+				&:after {
+					transform: rotate(45deg);
+				}
+			}
+			&.slick-prev {
+				left: percentage(1/12);
+				margin-left: -32px;
+				i {
+					left: 10px;
+					&:before,
+					&:after {
+						transform-origin: left center;
+					}
+				}
+			}
+			&.slick-next {
+				right: percentage(1/12);
+				margin-right: -32px;
+				i {
+					left: 10px;
+					&:before,
+					&:after {
+						transform-origin: right center; 
+					}
+				}
 			}
 		}
 	}

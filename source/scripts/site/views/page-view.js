@@ -45,6 +45,7 @@ site.views.Page.prototype.initPage = function() {
     }));
   });
 
+  el.core.managers.layoutManager.init();
   el.core.managers.layoutManager.resize();
 }
 
