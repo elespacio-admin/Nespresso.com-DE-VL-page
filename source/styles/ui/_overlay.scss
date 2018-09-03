@@ -3,6 +3,10 @@
 		z-index: auto !important;
 		text-align: center;
 		min-height: 0 !important;
+
+		*, button {
+	    box-sizing: border-box;
+	  }
 	}
 	.overlay {
 		@include fixedAll;
@@ -74,19 +78,19 @@
 			}
 			&Graphic {
 				height: 145px;
-				margin: 0 auto;
+				margin: 0 auto -24px auto;
 				position: relative;
 				z-index: 1;
 			}
 			&Name {
-				margin-top: -24px;
 				position: relative;
 				z-index: 2;
 			}
 			&Description {
 				position: relative;
 				z-index: 3;
-				margin-top: 10px;
+				margin: 10px auto 0 auto;
+				max-width: 375px;
 			}
 		}
 
