@@ -2,6 +2,7 @@
 	&Overlay {
 		z-index: auto !important;
 		text-align: center;
+		min-height: 0 !important;
 	}
 	.overlay {
 		@include fixedAll;
