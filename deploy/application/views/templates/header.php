@@ -14,9 +14,6 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<?php echo $settings['base_url'] . $header['og_url']; ?>" />
 
-    <script src="<?php echo $settings['base_url'];?>/assets/scripts/modernizr.js"></script>
-    <script src="<?php echo $settings['base_url'];?>/assets/scripts/picturefill.js"></script>
-
     <?php if(!$isDistribution): ?>
       <!--====== MAIN STYLESHEETS ======-->
       <link rel="stylesheet" href="https://www.nespresso.com/shared_res/mos/free_html/de/vertuo/css/normalize.css">
@@ -30,7 +27,6 @@
     <?php endif;?>
 
     <link rel="stylesheet" type="text/css" href="<?php echo $settings['base_url'];?>/assets/styles/main.css?v=<?php echo $settings['version'];?>">
-    <!-- <script src="<?php //echo $settings['base_url'];?>/assets/scripts/jquery.1.7.1.min.js"></script> -->
   </head>
 
   <body>
