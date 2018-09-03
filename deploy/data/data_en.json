@@ -11,8 +11,8 @@
     "header" : {
       "title" : "Nespresso | Original & Vertuo",
       "og_title" : "Nespresso | Original & Vertuo",
-      "og_description" : "discover two unique coffee experiences",
-      "og_image" : "positivecup.jpg",
+      "og_description" : "Discover two unique coffee experiences",
+      "og_image" : "nvertuo-social.jpg",
       "og_site_name" : "Nespresso | Original & Vertuo",
       "og_url" : "/"
     },
@@ -34,7 +34,7 @@
           "class": "range",
           "header": "original range",
           "title": "The highest<br> coffee&nbsp;quality",
-          "body": "Choose from a wide range of <em><em>Nespresso</em></em> coffee capsules, each with its own distinct individual character and aroma. You can never have too much choice. No two <em><em>Nespresso</em></em> flavours are the same.",
+          "body": "Choose from a wide range of <em>Nespresso</em> coffee capsules, each with its own distinct individual character and aroma. You can never have too much choice. No two <em>Nespresso</em> flavours are the same.",
           "cta": "Discover Original Coffee Range",
           "feature_a": "exceptional espresso variety",
           "icon_a": "icon-capsule",
@@ -347,7 +347,7 @@
       "cta_link": "#member-missing-link",
       "image": "member-packages.png",
       "alt": "Nespresso capsules packages",
-      "sticky_body": "Become a <em>Nespresso</em> club member &amp; enjoy an exclusive welcome offer",
+      "sticky_body": "Become a <em>Nespresso &amp; You</em> club member &amp; enjoy an exclusive welcome offer",
       "sticky_image": "sticky-member-packages.png",
       "sticky_alt": "Nespresso packages"
     }
