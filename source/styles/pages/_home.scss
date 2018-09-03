@@ -172,6 +172,7 @@
 			z-index: 2;
 			display: flex;
 			align-content: stretch;
+			background-color: $WHITE;
 
 			@include min-screen($BREAKPOINT_MEDIUM){
 				display: none;
@@ -183,13 +184,41 @@
 			display: block;
 			padding: 125px 0 15px 0;
 			width: 50%;
+
+			&:before {
+				content: "";
+				@include absoluteTL(10px, 0);
+				width: 100%;
+				height: calc(100% - 10px);
+
+				@include min-screen($BREAKPOINT_MEDIUM) {
+					display: none;
+				}
+			}
 			&.original {
 				color: $WHITE;
-				background-color: $BLACK;
+				&:before {
+					background-color: $BLACK;
+				}
 			}
+
 			&.vertuo {
 				color: $BLACK;
-				background-color: $WHITE;
+				&:before {
+					background: linear-gradient(to bottom, #EEE, #FFF);
+				}
+				&.is-active {
+					&:before {
+						backgdound-color: $WHITE;
+					}
+				}
+			}
+
+			&.is-active {
+				&:before {
+					height: 100%;
+					top: 0;
+				}
 			}
 
 			img {
@@ -201,6 +230,10 @@
 				@include min-screen($BREAKPOINT_NARROW){
 					top: 36px;
 				}
+			}
+
+			&Label {
+				position: relative;
 			}
 		}
 
