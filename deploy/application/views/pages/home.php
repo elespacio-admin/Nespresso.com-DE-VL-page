@@ -27,7 +27,7 @@
 					<span class="choiceTabLabel header--medium"><?php echo $choice['vertuo_label'];?></span>
 				</button>
 			</div>
-		<div class="choiceOptions">
+		<div class="choiceOptions" data-component="ChoicesAlignComponent">
 				<div id="choice-original" class="choiceContainer original is-visible">
 					<span class="choice--label choiceGraphicText original inner">O<br>r<br>i<br>g<br>i<br>n<br>a<br>l</span>
 					<?php foreach ($choice['original'] as $choiceItem) { ?>
@@ -54,6 +54,7 @@
 									</div>
 								</div>
 							<?php endif; ?>
+							<div class="choiceItemSpacer"></div>
 							<aside class="overlay <?php echo $choiceItem['class'];?>" role="dialog" aria-labelledby="dialogTitle" data-id="original-<?php echo $choiceItem['class'];?>" data-component="OverlayComponent">
 								<div class="overlayWrapper">
 									<button class="overlayClose round-button close big" aria-label="<?php echo $generic['close'];?>"><i class="icon"></i></button>
@@ -105,6 +106,7 @@
 									</div>
 								</div>
 							<?php endif; ?>
+							<div class="choiceItemSpacer"></div>
 						</div>
 						<aside class="overlay <?php echo $choiceItem['class'];?>" role="dialog" aria-labelledby="dialogTitle" data-id="vertuo-<?php echo $choiceItem['class'];?>" data-component="OverlayComponent">
 								<div class="overlayWrapper">

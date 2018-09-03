@@ -20,6 +20,7 @@
 // @codekit-prepend "site/components/services-component.js"
 // @codekit-prepend "site/components/overlay-component.js"
 // @codekit-prepend "site/components/sticky-bar-component.js"
+// @codekit-prepend "site/components/choices-align.js"
 
 // @codekit-prepend "site/views/page-view.js"
 
