@@ -41,6 +41,10 @@
 			color: $WHITE;
 			background-color: transparent;
 		}
+
+		&.small {
+			padding: 8px 32px 9px;
+		}
 	}
 
 	.round-button {

@@ -345,7 +345,11 @@
       "body": "By buying a pre-selected<br class=\"narrow\"><br class=\"wide\"> coffee assortment",
       "cta":"Become a member",
       "cta_link": "#member-missing-link",
-      "alt": "Nespresso capsules packages"
+      "image": "member-packages.png",
+      "alt": "Nespresso capsules packages",
+      "sticky_body": "Become a <em>Nespresso</em> club member &amp; enjoy an exclusive welcome offer",
+      "sticky_image": "sticky-member-packages.png",
+      "sticky_alt": "Nespresso packages"
     }
   }
 }

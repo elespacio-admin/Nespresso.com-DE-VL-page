@@ -841,6 +841,53 @@
 		&CTA {
 			width: auto;
 		}
+
+		&Sticky {
+			
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 50px;
+			color: $BLACK;
+			background-color: $WHITE;
+			z-index: 10;
+			opacity: 0;
+
+			&Wrapper {
+				width: 930px;
+				height: 100%;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			&Left,
+			&Right {
+				display: flex;
+				align-items: center;
+			}
+
+			&Graphic {
+				@include aspect-ratio(47, 43);
+				width: 47px;
+				margin-right: 5px;
+
+				img {
+					@include absoluteTL;
+					width: 100%;
+				}
+			}
+
+			display: none;
+
+			&.is-active {
+				@include min-screen($BREAKPOINT_MEDIUM) {
+					display: block;
+				}
+			}
+		}
 	}
 
 	.sprite {

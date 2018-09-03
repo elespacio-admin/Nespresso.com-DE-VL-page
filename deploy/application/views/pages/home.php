@@ -183,11 +183,25 @@
 			<h2 class="memberHeader header--medium"><?php echo $member['header'];?></h2>
 			<h3 class="memberTitle header--main"><?php echo $member['title'];?></h3>
 			<div class="memberGraphic">
-				<img src="<?php echo $settings['base_url']?>/assets/images/member-packages.png" alt="<?php echo $member['alt'];?>">
+				<img src="<?php echo $settings['base_url']?>/assets/images/<?php echo $member['image'];?>" alt="<?php echo $member['alt'];?>">
 			</div>
 			<h4 class="memberCallout header--slim"><?php echo $member['callout'];?></h4>
 			<p class="memberBody body--normal"><?php echo $member['body'];?></p>
 			<a class="memberCTA block-button" href="<?php echo $member['cta_link'];?>"><span class="label button--label"><?php echo $member['cta'];?></span></a>
+		</div>
+		<div class="memberSticky" data-component="StickyBarComponent"
+			data-start-selector=".nvertuo2018 .choice"
+			data-end-selector=".nvertuo2018 .member"
+		>
+			<div class="memberStickyWrapper">
+				<div class="memberStickyLeft">
+				<div class="memberStickyGraphic"><img src="<?php echo $settings['base_url']?>/assets/images/<?php echo $member['sticky_image'];?>" alt="<?php echo $member['sticky_alt'];?>"></div>
+				<p class="memberStickyBody sticky--label"><?php echo $member['sticky_body'] ?></p>
+				</div>
+				<div class="memberStickyRight">
+					<a class="memberCTA block-button small" href="<?php echo $member['cta_link'];?>"><span class="label button--label"><?php echo $member['cta'];?></span></a>
+				</div>
+			</div>
 		</div>
 	</section>
 </div>

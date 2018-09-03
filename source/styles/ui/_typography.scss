@@ -54,6 +54,19 @@
 		}
 	}
 
+	.sticky--label {
+		@extend %header-font;
+		text-transform: uppercase;
+		font-weight: $SEMIBOLD;
+		@include font-size(14px, 14px);
+		letter-spacing: 0.065rem;
+
+		em {
+			font-weight: $EXTRABOLD;
+			font-style: normal;
+		}
+	}
+
 	.list--label {
 		@extend %header-font;
 		text-transform: uppercase;
