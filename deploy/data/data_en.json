@@ -122,23 +122,23 @@
           "overlay_items": [
             {
               "image": "some-image.jpg",
-              "name": "view<br>collection",
+              "name": "view<br> collection",
               "size": "w25"
             },{
               "image": "some-image.jpg",
-              "name": "pixie collection",
+              "name": "pixie<br> collection",
               "size": "w25"
             },{
               "image": "some-image.jpg",
-              "name": "pure collection",
+              "name": "pure<br> collection",
               "size": "w25"
             },{
               "image": "some-image.jpg",
-              "name": "touch<br>collection",
+              "name": "touch<br> collection",
               "size": "w25"
             },{
               "image": "some-image.jpg",
-              "name": "reveal<br>collection",
+              "name": "reveal<br> collection",
               "size": "w20"
             },{
               "image": "some-image.jpg",
