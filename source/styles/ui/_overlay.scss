@@ -40,6 +40,16 @@
 			background-color: $WHITE;
 			border-radius: 2px;
 			padding: 65px percentage(20/1000) 60px percentage(20/1000);
+			
+			@include max-screen-height(900px) {
+				transform: translate(-50%,-50%) scale(0.85);
+			}
+			@include max-screen-height(800px) {
+				transform: translate(-50%,-50%) scale(0.75);
+			}
+			@include max-screen-height(680px) {
+				transform: translate(-50%,-50%) scale(0.65);
+			}
 		}
 
 		&Content {
