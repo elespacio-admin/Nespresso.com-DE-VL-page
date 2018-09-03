@@ -869,9 +869,13 @@
 				align-items: center;
 			}
 
+			&Left {
+				padding-top: 4px;
+			}
+
 			&Graphic {
-				@include aspect-ratio(47, 43);
-				width: 47px;
+				@include aspect-ratio(114, 70);
+				width: 75px;
 				margin-right: 5px;
 
 				img {
