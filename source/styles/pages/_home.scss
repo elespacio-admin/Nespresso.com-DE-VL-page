@@ -493,7 +493,7 @@
 		&Content {
 			@include min-screen($BREAKPOINT_MEDIUM){
 				display: flex;
-				flex-direction: row-reverse2;
+				flex-direction: row-reverse;
 				justify-content: space-between;
 			}
 		}
