@@ -356,7 +356,8 @@
 			}
 			&Features {
 				display: flex;
-				justify-content: space-evenly;
+				justify-content: space-between;
+				-ms-flex-pack: space-between;
 				@include min-screen($BREAKPOINT_MEDIUM){
 					width: 85%;
 					max-width: 670px;
