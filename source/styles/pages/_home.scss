@@ -884,7 +884,9 @@
 
 			&.is-active {
 				@include min-screen($BREAKPOINT_MEDIUM) {
-					display: block;
+					.no-touch & {
+						display: block;
+					}
 				}
 			}
 		}
