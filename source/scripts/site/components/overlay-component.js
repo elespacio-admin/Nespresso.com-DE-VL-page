@@ -23,6 +23,15 @@ site.components.OverlayComponent = el.core.utils.class.extend(function(options){
   el.core.events.globalDispatcher.on(site.events.event.OVERLAY_SHOW_REQUEST, $.proxy(this._onShowRequest, this));
   this.$el.find('button.close').on('click', $.proxy(this._onCloseClick, this));
   this.$el.on('click', $.proxy(this._onOuterClick, this));
+
+  if(!site.components.OverlayComponent.$targetEl) {
+    site.components.OverlayComponent.$targetEl = $('<div class="nvertuo2018 nvertuo2018Overlay"></div>');
+    $('body').append(site.components.OverlayComponent.$targetEl);
+  }
+
+  this.$parentEl = $(this.$el.parent());
+  this.$targetEl = site.components.OverlayComponent.$targetEl
+
 //overlayWrapper
 }, site.components.BaseComponent);
 
@@ -49,6 +58,7 @@ site.components.OverlayComponent.prototype._onCloseClick = function(e) {
 site.components.OverlayComponent.prototype._show = function() {
   if(!this._isShown) {
     this._isShown = true;
+    this.$targetEl.append(this.$el);
     this.$el.toggleClass('is-active', true).animate(
       {
         'opacity':1
@@ -78,6 +88,7 @@ site.components.OverlayComponent.prototype._hide = function() {
         // },
         'complete': function() {
           that.$el.toggleClass('is-active', false);
+          that.$parentEl.append(that.$el);
         }
       }
     );
