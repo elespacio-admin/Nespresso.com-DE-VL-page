@@ -1,14 +1,15 @@
 {
-	"distribution_url_desktop_en": "https://www.nespresso.com/de/en/vertou",
+	"distribution_url_desktop_en": "https://www.nespresso.com/de/en/vertuo",
 
-	"distribution_url_desktop_de": "https://www.nespresso.com/de/de/vertou",
+	"distribution_url_desktop_de": "https://www.nespresso.com/de/de/vertuo",
 
 	"source_url": "http://local.nvertuo.com",
 
 	"urls_to_replace": [
 		"http://placekitten.com",
 		"https://baconmockup.com",
-		"http://local.vertuo.com"
+		"http://local.nvertuo.com",
+		"http://tests.elespacio.net"
 	],
 	"txt_assets": [
 		"/assets/styles/main.css"
@@ -22,20 +23,20 @@
 	],
 
 	"site_map": {
-		"pages": {
-			"src_path": "/",
-			"dest_path": "/"
+		"home": {
+			"src_path": "",
+			"dest_path": ""
 		}
 	},
 
 	"variants": [
 		{
-			"dest_dir": "/desktop_de",
-			"url_sufix": "/desktop_de"
+			"dest_dir": "/en",
+			"url_sufix": "/desktop_en"
 		},
 		{
-			"dest_dir": "/desktop_en",
-			"url_sufix": "/desktop_en"
+			"dest_dir": "/de",
+			"url_sufix": "/desktop_de"
 		}
 	]
 }
