@@ -1,6 +1,6 @@
 {
   "settings": {
-    "version": "0.0.1",
+    "version": "0.0.2",
     "base_url": "http://local.nvertuo.com"
   },
   "home": {
@@ -44,32 +44,32 @@
           "alt": "Original range capsules",
           "overlay_items": [
             {
-              "image": "some-image.jpg",
+              "image": "original-range-a.jpg",
               "name": "Intenso",
               "description": "The ultimate Neapolitan cups",
               "size": "w33"
             },{
-              "image": "some-image.jpg",
+              "image": "original-range-b.jpg",
               "name": "Espresso",
               "description": "Traditional is best",
               "size": "w33"
             },{
-              "image": "some-image.jpg",
+              "image": "original-range-c.jpg",
               "name": "Master&nbsp;origin",
               "description": "A single origin’s striking cup",
               "size": "w33"
             },{
-              "image": "some-image.jpg",
+              "image": "original-range-d.jpg",
               "name": "Lungo",
               "description": "Extend the pleasure of an Espresso",
               "size": "w33"
             },{
-              "image": "some-image.jpg",
+              "image": "original-range-e.jpg",
               "name": "Decaffeinato",
               "description": "Same character without caffeine",
               "size": "w33"
             },{
-              "image": "some-image.jpg",
+              "image": "original-range-f.jpg",
               "name": "Variations",
               "description": "A flavoured gourmandise",
               "size": "w33"
@@ -92,17 +92,17 @@
           "alt": "Original range machine",
           "overlay_items": [
             {
-              "image": "some-image.jpg",
+              "image": "original-machines-a.jpg",
               "name": "Espressos",
               "description": "The Original line for the Espresso lovers",
-              "size": "w50"
+              "size": "w45"
             },{
-              "image": "some-image.jpg",
+              "image": "original-machines-b.jpg",
               "name": "Personalised espressos",
               "description": "Fancy yourself as a coffee expert? Get connected with the Nespresso Expert and Prodigio, or count on the KitchenAid companion.",
-              "size": "w50"
+              "size": "w55"
             },{
-              "image": "some-image.jpg",
+              "image": "original-machines-c.jpg",
               "name": "Milk and latte machines",
               "description": "Use the versatile level of settings to create a variety of coffee and milk recipes using barista-like customisation or one-touch systems.",
               "size": "w100"
@@ -121,39 +121,39 @@
           "alt": "Original accessories",
           "overlay_items": [
             {
-              "image": "some-image.jpg",
+              "image": "original-accessories-a.jpg",
               "name": "view<br> collection",
               "size": "w25"
             },{
-              "image": "some-image.jpg",
+              "image": "original-accessories-b.jpg",
               "name": "pixie<br> collection",
               "size": "w25"
             },{
-              "image": "some-image.jpg",
+              "image": "original-accessories-c.jpg",
               "name": "pure<br> collection",
               "size": "w25"
             },{
-              "image": "some-image.jpg",
+              "image": "original-accessories-d.jpg",
               "name": "touch<br> collection",
               "size": "w25"
             },{
-              "image": "some-image.jpg",
+              "image": "original-accessories-e.jpg",
               "name": "reveal<br> collection",
               "size": "w20"
             },{
-              "image": "some-image.jpg",
+              "image": "original-accessories-f.jpg",
               "name": "aeroccino3",
               "size": "w20"
             },{
-              "image": "some-image.jpg",
+              "image": "original-accessories-g.jpg",
               "name": "aeroccino4",
               "size": "w20"
             },{
-              "image": "some-image.jpg",
+              "image": "original-accessories-h.jpg",
               "name": "delicacies",
               "size": "w20"
             },{
-              "image": "some-image.jpg",
+              "image": "original-accessories-i.jpg",
               "name": "gift card",
               "size": "w20"
             }
@@ -177,32 +177,32 @@
           "alt": "Vertuo range capsules",
           "overlay_items": [
             {
-              "image": "some-image.jpg",
+              "image": "vertuo-range-a.jpg",
               "name": "Alto",
               "description": "Get going with the largest cup size",
               "size": "w33"
             },{
-              "image": "some-image.jpg",
+              "image": "vertuo-range-b.jpg",
               "name": "Master Origin",
               "description": "A single origin’s striking cup",
               "size": "w33"
             },{
-              "image": "some-image.jpg",
+              "image": "vertuo-range-c.jpg",
               "name": "MUG",
               "description": "Coffee for a longer experience",
               "size": "w33"
             },{
-              "image": "some-image.jpg",
+              "image": "vertuo-range-d.jpg",
               "name": "Gran Lungo",
               "description": "Extend the pleasure of an Espresso",
               "size": "w33"
             },{
-              "image": "some-image.jpg",
+              "image": "vertuo-range-e.jpg",
               "name": "Double espresso",
               "description": "Twice your Espresso",
               "size": "w33"
             },{
-              "image": "some-image.jpg",
+              "image": "vertuo-range-f.jpg",
               "name": "Espresso",
               "description": "Traditional is best",
               "size": "w33"
@@ -225,7 +225,7 @@
           "alt": "Vertuo range machine",
           "overlay_items": [
             {
-              "image": "some-image.jpg",
+              "image": "vertuo-machines-a.jpg",
               "name": "Your full range of coffee styles",
               "description": "A wide variety of coffees in various styles, all at the touch of a button. Coffee redefined",
               "size": "w100"
@@ -244,32 +244,32 @@
           "alt": "Vertuo accessories",
           "overlay_items": [
             {
-              "image": "some-image.jpg",
+              "image": "vertuo-accessories-a.jpg",
               "name": "Vertuo<br>espresso cups",
               "size": "w33"
             },
             {
-              "image": "some-image.jpg",
+              "image": "vertuo-accessories-b.jpg",
               "name": "Vertuo<br>gran lungo cups",
               "size": "w33"
             },
             {
-              "image": "some-image.jpg",
+              "image": "vertuo-accessories-c.jpg",
               "name": "Vertuo<br>coffee mugs",
               "size": "w33"
             },
             {
-              "image": "some-image.jpg",
+              "image": "vertuo-accessories-d.jpg",
               "name": "Vertuo spoon",
               "size": "w33"
             },
             {
-              "image": "some-image.jpg",
+              "image": "vertuo-accessories-e.jpg",
               "name": "Vertuo alto<br>travel mug",
               "size": "w33"
             },
             {
-              "image": "some-image.jpg",
+              "image": "vertuo-accessories-f.jpg",
               "name": "Vertuo<br>travel mug",
               "size": "w33"
             }
