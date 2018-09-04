@@ -69,27 +69,47 @@ class Deploy extends CI_Controller {
           return null;
         }
       }
+      else {
+        if (is_dir($source)) {
+          $dirsToOmit = $this->data['dirs_to_omit'];
 
-      // Make destination directory
-      if (!is_dir($dest)) {
-          mkdir($dest, $permissions);
-      }
+          for($i = 0; $i < count($dirsToOmit); $i++) {
 
-      // Loop through the folder
-      $dir = dir($source);
-      while (false !== $entry = $dir->read()) {
-          // Skip pointers
-          if ($entry == '.' || $entry == '..') {
-              continue;
+            if(strpos($source, $dirsToOmit[$i]) !== false) {
+
+              break;
+            }
           }
 
-          // Deep copy directories
-          $this->xcopy("$source/$entry", "$dest/$entry", $permissions);
-      }
+          if($i == count($dirsToOmit)) {
 
-      // Clean up
-      $dir->close();
-      return true;
+            // Make destination directory
+            if (!is_dir($dest)) {
+                mkdir($dest, $permissions);
+            }
+
+            // Loop through the folder
+            $dir = dir($source);
+            while (false !== $entry = $dir->read()) {
+                // Skip pointers
+                if ($entry == '.' || $entry == '..') {
+                    continue;
+                }
+
+                // Deep copy directories
+                $this->xcopy("$source/$entry", "$dest/$entry", $permissions);
+            }
+
+            // Clean up
+            $dir->close();
+            return true;
+          }
+          else {
+
+            return null;
+          }
+        }
+      }
   }
 
   private function mkpath($path)

@@ -1,9 +1,7 @@
 {
 	"distribution_url_desktop_en": "https://www.nespresso.com/de/en/vertou",
-	"distribution_url_mobile_en": "https://www.nespresso.com/mobile/de/en/vertou",
 
 	"distribution_url_desktop_de": "https://www.nespresso.com/de/de/vertou",
-	"distribution_url_mobile_de": "https://www.nespresso.com/mobile/de/de/vertou",
 
 	"source_url": "http://local.nvertuo.com",
 
@@ -19,10 +17,14 @@
 		"nespresso-"
 	],
 
+	"dirs_to_omit": [
+		"not-compressed"
+	],
+
 	"site_map": {
 		"pages": {
 			"src_path": "/",
-			"dest_path": "/test"
+			"dest_path": "/"
 		}
 	},
 
