@@ -28,7 +28,11 @@
 		display: inline-block;
 
 		@media (min-width: $BREAKPOINT_NARROW) {
-			padding: 16px 30px 16px;
+			padding: 12px 30px 14px;
+		}
+
+		@media (min-width: $BREAKPOINT_MEDIUM) {
+			padding: 14px 30px 16px;
 		}
 
 		.label {
@@ -43,7 +47,7 @@
 		}
 
 		&.small {
-			padding: 8px 32px 9px;
+			padding: 7px 32px 9px;
 		}
 	}
 
