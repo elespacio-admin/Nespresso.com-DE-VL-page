@@ -55,7 +55,7 @@
 								</div>
 							<?php endif; ?>
 							<div class="choiceItemSpacer"></div>
-							<aside class="overlay <?php echo $choiceItem['class'];?>" role="dialog" aria-labelledby="dialogTitle" data-id="original-<?php echo $choiceItem['class'];?>" data-component="OverlayComponent">
+							<aside class="overlay original <?php echo $choiceItem['class'];?>" role="dialog" aria-labelledby="dialogTitle" data-id="original-<?php echo $choiceItem['class'];?>" data-component="OverlayComponent">
 								<div class="overlayWrapper">
 									<button class="overlayClose round-button close big" aria-label="<?php echo $generic['close'];?>"><i class="icon"></i></button>
 									<div class="overlayContent">
@@ -108,7 +108,7 @@
 							<?php endif; ?>
 							<div class="choiceItemSpacer"></div>
 						</div>
-						<aside class="overlay <?php echo $choiceItem['class'];?>" role="dialog" aria-labelledby="dialogTitle" data-id="vertuo-<?php echo $choiceItem['class'];?>" data-component="OverlayComponent">
+						<aside class="overlay vertuo <?php echo $choiceItem['class'];?>" role="dialog" aria-labelledby="dialogTitle" data-id="vertuo-<?php echo $choiceItem['class'];?>" data-component="OverlayComponent">
 								<div class="overlayWrapper">
 									<button class="overlayClose round-button close big" aria-label="<?php echo $generic['close'];?>"><i class="icon"></i></button>
 									<div class="overlayContent">
