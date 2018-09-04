@@ -17,6 +17,7 @@ site.components.OverlayComponent = el.core.utils.class.extend(function(options){
 
   this.overlayID = this.$el.data('id');
   this._isShown = false;
+  this._imagesInitiated = false;
 
   this._register();
 
@@ -55,8 +56,22 @@ site.components.OverlayComponent.prototype._onCloseClick = function(e) {
   this._hide();
 }
 
+site.components.OverlayComponent.prototype._initialiseImages = function() {
+  this._imagesInitiated = true;
+
+  this.$el.find('.overlayItemGraphic').each(function(){
+    var $target = $(this);
+    $target.append('<img src="'+$target.data('image')+'">');
+  });
+}
+
 site.components.OverlayComponent.prototype._show = function() {
   if(!this._isShown) {
+
+    if(!this._imagesInitiated) {
+      this._initialiseImages();
+    }
+
     this._isShown = true;
     this.$targetEl.append(this.$el);
     this.$el.toggleClass('is-active', true).animate(
