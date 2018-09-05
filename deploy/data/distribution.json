@@ -32,11 +32,13 @@
 	"variants": [
 		{
 			"dest_dir": "/en",
-			"url_sufix": "/desktop_en"
+			"url_sufix": "/desktop_en",
+			"var_sufix": "desktop_en"
 		},
 		{
 			"dest_dir": "/de",
-			"url_sufix": "/desktop_de"
+			"url_sufix": "/desktop_de",
+			"var_sufix": "desktop_de"
 		}
 	]
 }

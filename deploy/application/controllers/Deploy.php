@@ -209,7 +209,7 @@ class Deploy extends CI_Controller {
       // replace paths in static assets
       foreach ($data['txt_assets'] as $asset) {
 
-        $this->replace_in_file($asset, $params);
+        $this->replace_in_file($asset, $value['var_sufix']);
       }
     }
 
