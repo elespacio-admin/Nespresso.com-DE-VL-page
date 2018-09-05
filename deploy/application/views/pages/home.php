@@ -152,7 +152,7 @@
 			<div class="servicesContent">
 				<div class="servicesGraphic">
 					<div class="servicesGraphicContent">
-						<img src="<?php echo $settings['base_url']?>/assets/images/services-devices.png" alt="<?php echo $services['alt'];?>">
+						<img src="<?php echo $settings['base_url']?>/assets/images/<?php echo $services['image'];?>" alt="<?php echo $services['alt'];?>">
 					</div>
 				</div>
 				<div class="servicesText">

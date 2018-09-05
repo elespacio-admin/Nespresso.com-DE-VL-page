@@ -27,11 +27,7 @@
 			height: calc(100vh - #{$HEADER_SIZE_W});
 			background: #ebe5df url(#{$url_prefix}/assets/images/intro-W.jpg) center 75%;
 			background-size: cover;
-		}
-
-		@include min-screen($BREAKPOINT_MEDIUM){
-			background: #ebe5df url(#{$url_prefix}/assets/images/intro-XW.jpg) center 75%;
-			background-size: cover;
+			min-height: 650px;
 		}
 
 		&Text {
@@ -67,11 +63,11 @@
 				margin-bottom: 20px;
 			}
 			@include min-screen($BREAKPOINT_MEDIUM){
-				width: percentage(7/12);
+				width: percentage(11/12);
 				margin-bottom: 12px;
 			}
 			
-			max-width: 750px;
+			max-width: 1150px;
 		}
 
 		&Scroll {

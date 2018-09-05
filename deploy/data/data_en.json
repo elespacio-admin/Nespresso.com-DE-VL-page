@@ -1,6 +1,6 @@
 {
   "settings": {
-    "version": "0.0.2",
+    "version": "1.0",
     "base_url": "http://local.nvertuo.com"
   },
   "home": {
@@ -18,9 +18,9 @@
     },
     "intro": {
       "header": "Original &amp; Vertuo",
-      "title": "Discover two unique coffee experiences",
+      "title": "Discover two<br> unique coffee experiences",
       "cta": "Become a member",
-      "cta_link": "#member-missing-link",
+      "cta_link": "https://www.nespresso.com/de/en/registration?execution=e1s1",
       "scroll": "Discover more"
     },
     "choice": {
@@ -76,7 +76,7 @@
             }
           ],
           "overlay_cta": "Discover the original range",
-          "overlay_cta_link": "#missing-link"
+          "overlay_cta_link": "https://www.nespresso.com/de/en/nespresso-original-kaffee-kapseln"
         },
         {
           "class": "machine",
@@ -109,7 +109,7 @@
             }
           ],
           "overlay_cta": "Discover the original machines",
-          "overlay_cta_link": "#missing-link"
+          "overlay_cta_link": "https://www.nespresso.com/de/en/nespresso-original-kapselmaschinen-entdecken"
         },
         {
           "class": "accessories",
@@ -159,7 +159,7 @@
             }
           ],
           "overlay_cta": "Discover the original accesories",
-          "overlay_cta_link": "#missing-link"
+          "overlay_cta_link": "https://www.nespresso.com/de/en/accessoire-collections"
         }
       ],
       "vertuo": [
@@ -208,8 +208,8 @@
               "size": "w33"
             }
           ],
-          "overlay_cta": "DISCOVER THE VERTUO RANGE",
-          "overlay_cta_link": "#missing-link"
+          "overlay_cta": "Discover the Vertuo range",
+          "overlay_cta_link": "https://www.nespresso.com/de/en/nespresso-vertuo-kaffee-kapseln"
         },
         {
           "class": "machine",
@@ -232,7 +232,7 @@
             }
           ],
           "overlay_cta": "Discover the vertuo machines",
-          "overlay_cta_link": "#missing-link"
+          "overlay_cta_link": "https://www.nespresso.com/de/en/nespresso-vertuo-kapselmaschinen-entdecken"
         },
         {
           "class": "accessories",
@@ -275,7 +275,7 @@
             }
           ],
           "overlay_cta": "Discover the vertuo accesories",
-          "overlay_cta_link": "#missing-link"
+          "overlay_cta_link": "https://www.nespresso.com/de/en/nespresso-vertuo-accessoires-collection"
         }
       ]
     },
@@ -311,6 +311,7 @@
       "header": "Available all day",
       "callout_title": "Make your<br class=\"narrow\"><br class=\"wide\">order now",
       "body": "<em>Nespresso</em> coffee specialists and experts are available online 24 hours a day. We're here when you need us on the mobile <em>Nespresso</em> app, the toll free phone number or in <em>Nespresso</em> stores to provide you with answers and solutions.",
+      "image": "services-devices.png",
       "alt": "Services illustration"
     },
     "expertise": {
@@ -336,7 +337,7 @@
         }
       ],
       "cta": "Discover our sustainability vision",
-      "cta_link": "#sustainability-missing-link"
+      "cta_link": "https://www.nespresso.com/de/en/our-choices"
     },
     "member": {
       "header": "Become a<br class=\"not-wide\"> <em>Nespresso</em> club member",
@@ -344,7 +345,7 @@
       "callout": "get an exclusive gift",
       "body": "By buying a pre-selected<br class=\"narrow\"><br class=\"wide\"> coffee assortment",
       "cta":"Become a member",
-      "cta_link": "#member-missing-link",
+      "cta_link": "https://www.nespresso.com/de/en/registration?execution=e1s1",
       "image": "member-packages.png",
       "alt": "Nespresso capsules packages",
       "sticky_body": "Become a <em>Nespresso &amp; You</em> club member &amp; enjoy an exclusive welcome offer",

@@ -1,6 +1,6 @@
 {
   "settings": {
-    "version": "0.0.2",
+    "version": "1.0",
     "base_url": "http://local.nvertuo.com"
   },
   "home": {
@@ -18,10 +18,10 @@
     },
     "intro": {
       "header": "Original &amp; Vertuo",
-      "title": "Entdecken Sie zwei einzigartige<br> Kaffee-Erlebnisse",
+      "title": "Entdecken Sie zwei<br> einzigartige Kaffee-Erlebnisse",
       "cta": "Mitglied werden",
-      "cta_link": "#member-missing-link",
-      "scroll": "Mehr entdecke"
+      "cta_link": "https://www.nespresso.com/de/de/registration?execution=e1s1",
+      "scroll": "Mehr entdecken"
     },
     "choice": {
       "title":"Wählen Sie Kaffeesortiment, Kaffeemaschine & Accessoires",
@@ -76,7 +76,7 @@
             }
           ],
           "overlay_cta": "Original Sortiment entdecken",
-          "overlay_cta_link": "#missing-link"
+          "overlay_cta_link": "https://www.nespresso.com/de/de/nespresso-original-kaffee-kapseln"
         },
         {
           "class": "machine",
@@ -109,7 +109,7 @@
             }
           ],
           "overlay_cta": "Original Kaffeemaschinen entdecken",
-          "overlay_cta_link": "#missing-link"
+          "overlay_cta_link": "https://www.nespresso.com/de/de/nespresso-original-kapselmaschinen-entdecken"
         },
         {
           "class": "accessories",
@@ -159,14 +159,14 @@
             }
           ],
           "overlay_cta": "Original Accessoires entdecken",
-          "overlay_cta_link": "#missing-link"
+          "overlay_cta_link": "https://www.nespresso.com/de/de/accessoire-collections"
         }
       ],
       "vertuo": [
         {
           "class": "range",
           "header": "Vertuo Sortiment",
-          "title": "The bigger<br> coffee cup",
+          "title": "Die größere<br> Kaffeetasse",
           "body": "Die Vertuo Kaffeekapseln sind in verschiedensten Ausführungen und Größen erhältlich. Genauer gesagt: in 25 Röstmischungen und fünf verschiedenen Tassengrößen.<br>Jede Röstmischung wird speziell für die jeweilige Größe produziert – für Ihren perfekten Kaffeegenuss, zu jeder Tageszeit.",
           "cta": "Vertuo Kaffeesortiment entdecken",
           "feature_a": "Vollmundiges Kaffeevergnügen in einer großen Mug",
@@ -209,7 +209,7 @@
             }
           ],
           "overlay_cta": "Vertuo Sortiment entdecken",
-          "overlay_cta_link": "#missing-link"
+          "overlay_cta_link": "https://www.nespresso.com/de/de/nespresso-vertuo-kaffee-kapseln"
         },
         {
           "class": "machine",
@@ -232,7 +232,7 @@
             }
           ],
           "overlay_cta": "Vertuo Kaffeemaschinen entdecken",
-          "overlay_cta_link": "#missing-link"
+          "overlay_cta_link": "https://www.nespresso.com/de/de/nespresso-vertuo-kapselmaschinen-entdecken"
         },
         {
           "class": "accessories",
@@ -275,7 +275,7 @@
             }
           ],
           "overlay_cta": "Vertuo Accessoires entdecken",
-          "overlay_cta_link": "#missing-link"
+          "overlay_cta_link": "https://www.nespresso.com/de/de/nespresso-vertuo-accessoires-collection"
         }
       ]
     },
@@ -311,6 +311,7 @@
       "header": "Rund um die Uhr erreichbar",
       "callout_title": "Jetzt<br class=\"narrow\"><br class=\"wide\"> bestellen",
       "body": "Die Kaffeespezialisten und Experten von <em>Nespresso</em> sind rund um die Uhr online erreichbar. Sie erreichen uns über die mobile Nespresso App, über die gebührenfreie Servicenummer oder in den Nespresso Boutiquen. Wir helfen Ihnen gerne bei Fragen oder Problemen weiter.",
+      "image": "services-devices_de.png",
       "alt": "Dienstleistungen Abbildung"
     },
     "expertise": {
@@ -336,7 +337,7 @@
         }
       ],
       "cta": "Entdecken Sie unsere Nachhaltigkeitsvision",
-      "cta_link": "#sustainability-missing-link"
+      "cta_link": "https://www.nespresso.com/de/de/thepositivecup"
     },
     "member": {
       "header": "Werden Sie<br class=\"not-wide\"> Mitglied im <em>Nespresso Club</em>",
@@ -345,7 +346,7 @@
       "body": "By buying a pre-selected<br class=\"narrow\"><br class=\"wide\"> coffee assortment",
       "body": "Beim Kauf eines ausgewählten<br> Kaffeesortiments",
       "cta":"Mitglied&nbsp;werden",
-      "cta_link": "#member-missing-link",
+      "cta_link": "https://www.nespresso.com/de/de/registration?execution=e1s1",
       "image": "member-packages.png",
       "alt": "Nespresso Geschenkpakete",
       "sticky_body": "Werden Sie Mitglied bei <em>Nespresso &amp; You</em> und genießen Sie ein exklusives Willkommensangebot",
