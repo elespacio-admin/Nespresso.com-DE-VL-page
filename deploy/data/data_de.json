@@ -27,8 +27,8 @@
       "title":"Wählen Sie Kaffeesortiment, Kaffeemaschine & Accessoires",
       "original_label": "Original<br> System",
       "vertuo_label": "vertuo<br> range",
-      "original_alt": "Original capsule",
-      "vertuo_alt": "Vertuo capsule",
+      "original_alt": "Original Kapsel",
+      "vertuo_alt": "Vertuo Kapsel",
       "original":[
         {
           "class": "range",
@@ -41,41 +41,41 @@
           "feature_b": "Cremige und dichte Crema",
           "icon_b": "icon-cup",
           "image": "choice-range-original.png",
-          "alt": "Original Sortiment Capsules",
+          "alt": "Original-Sortimentskapseln",
           "overlay_items": [
             {
               "image": "original-range-a.jpg",
               "name": "Intenso",
-              "description": "The ultimate Neapolitan cups",
+              "description": "Die ultimativen neapolitanischen Klassiker",
               "size": "w33"
             },{
               "image": "original-range-b.jpg",
               "name": "Espresso",
-              "description": "Traditional is best",
+              "description": "In bester Tradition",
               "size": "w33"
             },{
               "image": "original-range-c.jpg",
               "name": "Master&nbsp;origin",
-              "description": "A single origin’s striking cup",
+              "description": "Beeindruckendes aus einem Land",
               "size": "w33"
             },{
               "image": "original-range-d.jpg",
               "name": "Lungo",
-              "description": "Extend the pleasure of an Espresso",
+              "description": "Verlängertes Espresso-Vergnügen",
               "size": "w33"
             },{
               "image": "original-range-e.jpg",
               "name": "Decaffeinato",
-              "description": "Same character without caffeine",
+              "description": "Gleicher Charakter, aber ohne Koffein",
               "size": "w33"
             },{
               "image": "original-range-f.jpg",
               "name": "Variations",
-              "description": "A flavoured gourmandise",
+              "description": "Ein Aromagenuss",
               "size": "w33"
             }
           ],
-          "overlay_cta": "Discover the original range",
+          "overlay_cta": "Original Sortiment entdecken",
           "overlay_cta_link": "#missing-link"
         },
         {
@@ -89,26 +89,26 @@
           "feature_b": "Espresso-und Milchrezepte",
           "icon_b": "icon-cappuccino",
           "image": "choice-machine-original.png",
-          "alt": "Original range machine",
+          "alt": "Original Sortiment Kaffeemaschinen",
           "overlay_items": [
             {
               "image": "original-machines-a.jpg",
               "name": "Espressos",
-              "description": "The Original line for the Espresso lovers",
+              "description": "Die Original Serie für Espresso-Liebhaber",
               "size": "w50"
             },{
               "image": "original-machines-b.jpg",
-              "name": "Personalised espressos",
-              "description": "Fancy yourself as a coffee expert? Get connected with the Nespresso Expert and Prodigio, or count on the KitchenAid companion.",
+              "name": "Personalisierter Espresso",
+              "description": "Wären Sie gerne ein Kaffee-Experte? Kommunizieren Sie digital mit der Nespresso Expert und Prodigio oder setzen Sie auf die Unterstützung der KitchenAid.",
               "size": "w50"
             },{
               "image": "original-machines-c.jpg",
-              "name": "Milk and latte machines",
-              "description": "Use the versatile level of settings to create a variety of coffee and milk recipes using barista-like customisation or one-touch systems.",
+              "name": "Kaffeemaschinen für Milch und Latte Macchiato",
+              "description": "Nutzen Sie die vielseitigen Einstellmöglichkeiten für eine Vielzahl an Kaffee- und Milchrezepten – für individuelle Kreationen wie vom Profi oder mit dem One-Touch-System.",
               "size": "w100"
             }
           ],
-          "overlay_cta": "Discover the original machines",
+          "overlay_cta": "Original Kaffeemaschinen entdecken",
           "overlay_cta_link": "#missing-link"
         },
         {
@@ -118,27 +118,27 @@
           "body": "Veredeln Sie Ihre Genussmomente mit unseren Accessoire-Kollektionen – die perfekte Kombination von Form und Funktion.<br> Tassen und Gläser für alle Kaffeespezialitäten sowie Kapselspender für die perfekte Aufbewahrung Ihrer Lieblingskaffees.",
           "cta": "Original Accessoires entdecken",
           "image": "choice-accessories-original.png",
-          "alt": "Original accessories",
+          "alt": "Original Accessories",
           "overlay_items": [
             {
               "image": "original-accessories-a.jpg",
-              "name": "view<br> collection",
+              "name": "view<br> Kollektion",
               "size": "w25"
             },{
               "image": "original-accessories-b.jpg",
-              "name": "pixie<br> collection",
+              "name": "pixie<br> Kollektion",
               "size": "w25"
             },{
               "image": "original-accessories-c.jpg",
-              "name": "pure<br> collection",
+              "name": "pure<br> Kollektion",
               "size": "w25"
             },{
               "image": "original-accessories-d.jpg",
-              "name": "touch<br> collection",
+              "name": "touch<br> Kollektion",
               "size": "w25"
             },{
               "image": "original-accessories-e.jpg",
-              "name": "reveal<br> collection",
+              "name": "reveal<br> Kollektion",
               "size": "w20"
             },{
               "image": "original-accessories-f.jpg",
@@ -154,11 +154,11 @@
               "size": "w20"
             },{
               "image": "original-accessories-i.jpg",
-              "name": "gift card",
+              "name": "Gutschein",
               "size": "w20"
             }
           ],
-          "overlay_cta": "Discover the original accesories",
+          "overlay_cta": "Original Accessoires entdecken",
           "overlay_cta_link": "#missing-link"
         }
       ],
@@ -179,36 +179,36 @@
             {
               "image": "vertuo-range-a.jpg",
               "name": "Alto",
-              "description": "Get going with the largest cup size",
+              "description": "Starten Sie mit der größten Tassengröße in den Tag",
               "size": "w33"
             },{
               "image": "vertuo-range-b.jpg",
               "name": "Master Origin",
-              "description": "A single origin’s striking cup",
+              "description": "Beeindruckendes aus einem Land",
               "size": "w33"
             },{
               "image": "vertuo-range-c.jpg",
               "name": "MUG",
-              "description": "Coffee for a longer experience",
+              "description": "Kaffee für ein längeres Genusserlebnis",
               "size": "w33"
             },{
               "image": "vertuo-range-d.jpg",
               "name": "Gran Lungo",
-              "description": "Extend the pleasure of an Espresso",
+              "description": "Verlängertes Espresso-Vergnügen",
               "size": "w33"
             },{
               "image": "vertuo-range-e.jpg",
               "name": "Double espresso",
-              "description": "Twice your Espresso",
+              "description": "Verdoppeln Sie Ihren Espresso",
               "size": "w33"
             },{
               "image": "vertuo-range-f.jpg",
               "name": "Espresso",
-              "description": "Traditional is best",
+              "description": "In bester Tradition",
               "size": "w33"
             }
           ],
-          "overlay_cta": "DISCOVER THE VERTUO RANGE",
+          "overlay_cta": "Vertuo Sortiment entdecken",
           "overlay_cta_link": "#missing-link"
         },
         {
@@ -222,12 +222,12 @@
           "feature_b": "Extraction by Centrifusion&trade;",
           "icon_b": "icon-arrows",
           "image": "choice-machine-vertuo.png",
-          "alt": "Vertuo range machine",
+          "alt": "Vertuo Kaffeemaschine",
           "overlay_items": [
             {
               "image": "vertuo-machines-a.jpg",
-              "name": "Your full range of coffee styles",
-              "description": "A wide variety of coffees in various styles, all at the touch of a button. Coffee redefined",
+              "name": "Die volle Auswahl an Kaffeestilen",
+              "description": "Eine Vielzahl von Kaffees in unterschiedlichen Kaffeestilen – mit nur einem Knopfdruck. Kaffee neu definiert",
               "size": "w100"
             }
           ],
@@ -241,26 +241,26 @@
           "body": "Der Designer Konstantin Grcic spricht mit seinen Kreationen Gaumen, Nase und Auge gleichermaßen an und hat verschiedene Accessoires für die große Vielfalt an Nespresso Vertuo Kaffee-Erlebnissen geschaffen.<br>Lassen Sie sich inspirieren!",
           "cta": "Vertuo Accessoires entdecken",
           "image": "choice-accessories-vertuo.png",
-          "alt": "Vertuo accessories",
+          "alt": "Vertuo Accessoires",
           "overlay_items": [
             {
               "image": "vertuo-accessories-a.jpg",
-              "name": "Vertuo<br>espresso cups",
+              "name": "Vertuo<br>Espresso Tassen",
               "size": "w33"
             },
             {
               "image": "vertuo-accessories-b.jpg",
-              "name": "Vertuo<br>gran lungo cups",
+              "name": "Vertuo<br>Gran Lungo Tassen",
               "size": "w33"
             },
             {
               "image": "vertuo-accessories-c.jpg",
-              "name": "Vertuo<br>coffee mugs",
+              "name": "Vertuo<br>Kaffee Mugs",
               "size": "w33"
             },
             {
               "image": "vertuo-accessories-d.jpg",
-              "name": "Vertuo spoon",
+              "name": "Vertuo Löffel",
               "size": "w33"
             },
             {
@@ -284,34 +284,34 @@
       "items": [
         { 
           "id": "internet",
-          "label": "Online<br>bestellen",
+          "label": "Online<br> bestellen",
           "icon": "icon-o-internet"
         },
         {
           "id": "app",
-          "label": "Über Mobile App<br>bestellen",
+          "label": "Über Mobile App<br> bestellen",
           "icon": "icon-o-app"
         },
         {
           "id": "phone",
-          "label": "Telefonisch<br>bestellen",
+          "label": "Telefonisch<br> bestellen",
           "icon": "icon-o-phone"
         },
         {
           "id": "boutique",
-          "label": "In der Boutique<br>bestellen",
+          "label": "In der Boutique<br> bestellen",
           "icon": "icon-o-boutique"
         },
         {
           "id": "easy",
-          "label": "Bestellen<br>leicht gemacht",
+          "label": "Bestellen<br> leicht gemacht",
           "icon": "icon-o-easy"
         }
       ],
       "header": "Rund um die Uhr erreichbar",
       "callout_title": "Jetzt<br class=\"narrow\"><br class=\"wide\"> bestellen",
       "body": "Die Kaffeespezialisten und Experten von <em>Nespresso</em> sind rund um die Uhr online erreichbar. Sie erreichen uns über die mobile Nespresso App, über die gebührenfreie Servicenummer oder in den Nespresso Boutiquen. Wir helfen Ihnen gerne bei Fragen oder Problemen weiter.",
-      "alt": "Services illustration"
+      "alt": "Dienstleistungen Abbildung"
     },
     "expertise": {
       "title": "Kaffeekompetenz<br class=\"not-narrow\"> in&nbsp;einer&nbsp;Tasse",
@@ -347,10 +347,10 @@
       "cta":"Mitglied werden",
       "cta_link": "#member-missing-link",
       "image": "member-packages.png",
-      "alt": "Nespresso capsules packages",
+      "alt": "Nespresso Geschenkpakete",
       "sticky_body": "Werden Sie Mitglied bei <em>Nespresso &amp; You</em> und genießen Sie ein exklusives Willkommensangebot",
       "sticky_image": "sticky-member-packages.png",
-      "sticky_alt": "Nespresso packages"
+      "sticky_alt": "Nespresso Geschenkpakete"
     }
   }
 }
